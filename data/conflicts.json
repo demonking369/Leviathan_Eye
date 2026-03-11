@@ -1,0 +1,240 @@
+[
+  {
+    "id": "ukraine_russia",
+    "name": "Russia-Ukraine War",
+    "status": "active",
+    "intensity": "extreme",
+    "start_date": "2022-02-24",
+    "parties": [
+      "Russia",
+      "Ukraine"
+    ],
+    "description": "Full-scale Russian invasion.",
+    "origin_lat": 55.756,
+    "origin_lon": 37.617,
+    "target_lat": 50.45,
+    "target_lon": 30.523,
+    "missile_type": "Kalibr/Kh-101/Iskander",
+    "daily_strikes": 15,
+    "casualties_est": "500,000+",
+    "displaced": "8M+",
+    "war_status": true
+  },
+  {
+    "id": "israel_gaza",
+    "name": "Israel-Gaza War",
+    "status": "active",
+    "intensity": "extreme",
+    "start_date": "2023-10-07",
+    "parties": [
+      "Israel",
+      "Hamas"
+    ],
+    "description": "Hamas Oct 7 attacks triggered Israeli operations.",
+    "origin_lat": 31.5,
+    "origin_lon": 34.467,
+    "target_lat": 31.355,
+    "target_lon": 34.309,
+    "missile_type": "Qassam/Iron Dome",
+    "daily_strikes": 8,
+    "casualties_est": "50,000+",
+    "displaced": "1.9M+",
+    "war_status": true
+  },
+  {
+    "id": "israel_hezbollah",
+    "name": "Israel-Hezbollah Conflict",
+    "status": "active",
+    "intensity": "high",
+    "start_date": "2023-10-08",
+    "parties": [
+      "Israel",
+      "Hezbollah"
+    ],
+    "description": "Cross-border exchanges, Israeli strikes on Lebanon.",
+    "origin_lat": 33.27,
+    "origin_lon": 35.593,
+    "target_lat": 32.95,
+    "target_lon": 35.2,
+    "missile_type": "Katyusha/IAF airstrikes",
+    "daily_strikes": 5,
+    "casualties_est": "5,000+",
+    "war_status": true
+  },
+  {
+    "id": "houthi_red_sea",
+    "name": "Houthi Red Sea Campaign",
+    "status": "active",
+    "intensity": "high",
+    "start_date": "2023-11-19",
+    "parties": [
+      "Houthis",
+      "USA/UK"
+    ],
+    "description": "Houthi drone/missile attacks on shipping.",
+    "origin_lat": 14.797,
+    "origin_lon": 42.952,
+    "target_lat": 13.0,
+    "target_lon": 43.5,
+    "missile_type": "Shahed/Quds-1",
+    "daily_strikes": 3,
+    "war_status": true
+  },
+  {
+    "id": "iran_israel_direct",
+    "name": "Iran-Israel Direct Strikes",
+    "status": "active",
+    "intensity": "critical",
+    "start_date": "2024-04-01",
+    "parties": [
+      "Iran",
+      "Israel"
+    ],
+    "description": "Iran 300+ drones/missiles at Israel Apr 2024.",
+    "origin_lat": 32.428,
+    "origin_lon": 53.688,
+    "target_lat": 31.768,
+    "target_lon": 35.214,
+    "missile_type": "Shahab-3/Shahed-136",
+    "daily_strikes": 1,
+    "war_status": true
+  },
+  {
+    "id": "sudan_civil_war",
+    "name": "Sudan Civil War",
+    "status": "active",
+    "intensity": "extreme",
+    "start_date": "2023-04-15",
+    "parties": [
+      "SAF",
+      "RSF"
+    ],
+    "description": "SAF vs RSF across Sudan.",
+    "origin_lat": 15.501,
+    "origin_lon": 32.56,
+    "target_lat": 13.635,
+    "target_lon": 25.88,
+    "missile_type": "Artillery",
+    "daily_strikes": 12,
+    "casualties_est": "20,000+",
+    "displaced": "9M+",
+    "war_status": true
+  },
+  {
+    "id": "myanmar_civil_war",
+    "name": "Myanmar Civil War",
+    "status": "active",
+    "intensity": "high",
+    "start_date": "2021-02-01",
+    "parties": [
+      "SAC",
+      "PDFs/EAOs"
+    ],
+    "description": "Post-coup resistance vs military junta.",
+    "origin_lat": 19.763,
+    "origin_lon": 96.079,
+    "target_lat": 21.959,
+    "target_lon": 96.089,
+    "missile_type": "Airstrikes",
+    "daily_strikes": 5,
+    "casualties_est": "50,000+",
+    "war_status": true
+  },
+  {
+    "id": "somalia_al_shabaab",
+    "name": "Somalia Al-Shabaab Conflict",
+    "status": "active",
+    "intensity": "high",
+    "start_date": "2006-01-01",
+    "parties": [
+      "Somalia",
+      "Al-Shabaab"
+    ],
+    "description": "Islamist insurgency.",
+    "origin_lat": 2.047,
+    "origin_lon": 45.318,
+    "target_lat": 1.65,
+    "target_lon": 44.0,
+    "missile_type": "IEDs/airstrikes",
+    "daily_strikes": 3,
+    "war_status": true
+  },
+  {
+    "id": "drc_m23",
+    "name": "DRC M23 Conflict",
+    "status": "active",
+    "intensity": "high",
+    "start_date": "2021-11-01",
+    "parties": [
+      "DRC",
+      "M23/Rwanda"
+    ],
+    "description": "M23 rebels seized Goma.",
+    "origin_lat": -1.674,
+    "origin_lon": 29.226,
+    "target_lat": -1.76,
+    "target_lon": 28.33,
+    "missile_type": "Artillery/rockets",
+    "daily_strikes": 6,
+    "casualties_est": "7,000+",
+    "war_status": true
+  },
+  {
+    "id": "india_china_lac",
+    "name": "India-China LAC Tensions",
+    "status": "active",
+    "intensity": "medium",
+    "start_date": "2020-06-15",
+    "parties": [
+      "India",
+      "China"
+    ],
+    "description": "Galwan Valley clash. Ongoing LAC tensions.",
+    "origin_lat": 34.136,
+    "origin_lon": 77.547,
+    "target_lat": 35.055,
+    "target_lon": 79.984,
+    "missile_type": "None",
+    "daily_strikes": 0,
+    "war_status": false
+  },
+  {
+    "id": "south_china_sea",
+    "name": "South China Sea Disputes",
+    "status": "active",
+    "intensity": "medium",
+    "start_date": "2010-01-01",
+    "parties": [
+      "China",
+      "Philippines",
+      "Vietnam"
+    ],
+    "description": "Chinese coast guard harassment of Philippine vessels.",
+    "origin_lat": 10.7,
+    "origin_lon": 114.5,
+    "target_lat": 9.75,
+    "target_lon": 118.75,
+    "missile_type": "Water cannons",
+    "daily_strikes": 0,
+    "war_status": false
+  },
+  {
+    "id": "north_korea_provocations",
+    "name": "North Korea Missile Provocations",
+    "status": "active",
+    "intensity": "high",
+    "start_date": "2022-01-01",
+    "parties": [
+      "North Korea",
+      "USA/SK/Japan"
+    ],
+    "description": "Record DPRK missile launches.",
+    "origin_lat": 39.66,
+    "origin_lon": 124.705,
+    "target_lat": 37.567,
+    "target_lon": 126.978,
+    "missile_type": "Hwasong-17 ICBM",
+    "daily_strikes": 0,
+    "war_status": false
+  }
+]

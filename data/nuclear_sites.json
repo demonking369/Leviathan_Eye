@@ -1,0 +1,156 @@
+[
+  {
+    "id": "us_ne_mm",
+    "name": "Minuteman III Fields (NE)",
+    "lat": 41.125,
+    "lon": -98.35,
+    "country": "USA",
+    "warheads_est": 150,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "F.E. Warren AFB silos"
+  },
+  {
+    "id": "us_nd_mm",
+    "name": "Minuteman III Fields (ND)",
+    "lat": 46.9,
+    "lon": -101.0,
+    "country": "USA",
+    "warheads_est": 150,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "Minot AFB silos"
+  },
+  {
+    "id": "us_mt_mm",
+    "name": "Minuteman III Fields (MT)",
+    "lat": 47.5,
+    "lon": -109.5,
+    "country": "USA",
+    "warheads_est": 150,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "Malmstrom AFB silos"
+  },
+  {
+    "id": "ru_tatischevo",
+    "name": "Tatishchevo ICBM Base",
+    "lat": 51.76,
+    "lon": 45.59,
+    "country": "Russia",
+    "warheads_est": 100,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "RS-28 Sarmat silos"
+  },
+  {
+    "id": "ru_uzhur",
+    "name": "Uzhur ICBM Base",
+    "lat": 55.3,
+    "lon": 89.8,
+    "country": "Russia",
+    "warheads_est": 60,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "RS-28 Sarmat"
+  },
+  {
+    "id": "ru_yoshkar",
+    "name": "Yoshkar-Ola Mobile ICBM",
+    "lat": 56.634,
+    "lon": 47.865,
+    "country": "Russia",
+    "warheads_est": 54,
+    "type": "ICBM_mobile",
+    "status": "active",
+    "desc": "Topol-M/Yars TELs"
+  },
+  {
+    "id": "cn_yumen",
+    "name": "Yumen DF-41 Silo Field",
+    "lat": 40.15,
+    "lon": 97.35,
+    "country": "China",
+    "warheads_est": 120,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "120+ DF-41 silos"
+  },
+  {
+    "id": "cn_hami",
+    "name": "Hami DF-41 Silo Field",
+    "lat": 43.1,
+    "lon": 93.4,
+    "country": "China",
+    "warheads_est": 110,
+    "type": "ICBM",
+    "status": "construction",
+    "desc": "Under construction"
+  },
+  {
+    "id": "cn_ordos",
+    "name": "Ordos DF-5 Field",
+    "lat": 38.9,
+    "lon": 107.5,
+    "country": "China",
+    "warheads_est": 48,
+    "type": "ICBM",
+    "status": "active",
+    "desc": "DF-5B silos"
+  },
+  {
+    "id": "pk_sargodha",
+    "name": "Pakistan Stockpile",
+    "lat": 32.08,
+    "lon": 72.65,
+    "country": "Pakistan",
+    "warheads_est": 170,
+    "type": "tactical/strategic",
+    "status": "active",
+    "desc": "Est. 160-170 warheads"
+  },
+  {
+    "id": "in_stockpile",
+    "name": "India Stockpile",
+    "lat": 12.972,
+    "lon": 77.595,
+    "country": "India",
+    "warheads_est": 172,
+    "type": "strategic",
+    "status": "active",
+    "desc": "Agni-V warheads est."
+  },
+  {
+    "id": "il_dimona",
+    "name": "Israel Samson Option",
+    "lat": 31.003,
+    "lon": 35.148,
+    "country": "Israel",
+    "warheads_est": 90,
+    "type": "strategic",
+    "status": "active",
+    "desc": "80-90 warheads est."
+  },
+  {
+    "id": "kp_storage",
+    "name": "DPRK Warheads",
+    "lat": 40.0,
+    "lon": 127.0,
+    "country": "North Korea",
+    "warheads_est": 50,
+    "type": "tactical",
+    "status": "active",
+    "desc": "40-50+ warheads"
+  },
+  {
+    "id": "ir_breakout",
+    "name": "Iran Breakout Capability",
+    "lat": 33.723,
+    "lon": 51.727,
+    "country": "Iran",
+    "warheads_est": 0,
+    "type": "potential",
+    "status": "active",
+    "desc": "1-2 week breakout est."
+  }
+]

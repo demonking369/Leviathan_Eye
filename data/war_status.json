@@ -1,0 +1,18 @@
+{
+  "active_wars": [
+    "ukraine_russia",
+    "israel_gaza",
+    "israel_hezbollah",
+    "houthi_red_sea",
+    "iran_israel_direct",
+    "sudan_civil_war",
+    "myanmar_civil_war",
+    "somalia_al_shabaab",
+    "drc_m23"
+  ],
+  "high_tension": [
+    "india_china_lac",
+    "south_china_sea",
+    "north_korea_provocations"
+  ]
+}

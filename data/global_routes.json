@@ -1,0 +1,1196 @@
+{
+  "schema_version": "1.0",
+  "type": "strategic_routes",
+  "last_updated": "2026-03-09T01:22:25Z",
+  "data": [
+    {
+      "id": "cn_r01",
+      "name": "CPEC \u2014 China-Pakistan Corridor",
+      "nation": "cn",
+      "type": "land",
+      "color": "#ff2200",
+      "coords": [
+        [
+          39,
+          76
+        ],
+        [
+          36,
+          74
+        ],
+        [
+          34,
+          72
+        ],
+        [
+          30,
+          68
+        ],
+        [
+          27,
+          66
+        ],
+        [
+          25.1,
+          62.3
+        ]
+      ],
+      "description": "$62B CPEC. Xinjiang \u2192 Gwadar. Bypasses Malacca. Military logistics route.",
+      "strategic": "critical"
+    },
+    {
+      "id": "cn_r02",
+      "name": "China-Myanmar Pipeline",
+      "nation": "cn",
+      "type": "pipeline",
+      "color": "#ff6600",
+      "coords": [
+        [
+          24,
+          100
+        ],
+        [
+          22,
+          97
+        ],
+        [
+          20,
+          96
+        ],
+        [
+          17,
+          96
+        ],
+        [
+          16.5,
+          97.5
+        ]
+      ],
+      "description": "Oil/gas pipeline Yunnan \u2192 Kyaukpyu. Bypasses Malacca Strait for energy.",
+      "strategic": "high"
+    },
+    {
+      "id": "cn_r03",
+      "name": "China-Laos-Thailand Railway",
+      "nation": "cn",
+      "type": "rail",
+      "color": "#ff4400",
+      "coords": [
+        [
+          22,
+          103
+        ],
+        [
+          20,
+          102
+        ],
+        [
+          18,
+          103
+        ],
+        [
+          16,
+          103
+        ],
+        [
+          14,
+          101
+        ],
+        [
+          13.7,
+          100.5
+        ]
+      ],
+      "description": "High-speed rail Kunming \u2192 Bangkok. Extension planned to Singapore.",
+      "strategic": "medium"
+    },
+    {
+      "id": "cn_r04",
+      "name": "Trans-Siberian Freight (China-Europe)",
+      "nation": "cn",
+      "type": "rail",
+      "color": "#ff4400",
+      "coords": [
+        [
+          30,
+          121
+        ],
+        [
+          39,
+          117
+        ],
+        [
+          46,
+          124
+        ],
+        [
+          52,
+          113
+        ],
+        [
+          57,
+          104
+        ],
+        [
+          56,
+          95
+        ],
+        [
+          55,
+          73
+        ],
+        [
+          55,
+          60
+        ],
+        [
+          55,
+          38
+        ],
+        [
+          52,
+          8
+        ]
+      ],
+      "description": "China-Europe freight rail. 18 days vs 35 days sea. Avoids Suez.",
+      "strategic": "medium"
+    },
+    {
+      "id": "cn_r05",
+      "name": "PEACE Cable (Digital Silk Road)",
+      "nation": "cn",
+      "type": "cable",
+      "color": "#aa22ff",
+      "coords": [
+        [
+          22,
+          121
+        ],
+        [
+          8,
+          108
+        ],
+        [
+          -6,
+          105
+        ],
+        [
+          -20,
+          60
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          36,
+          14
+        ],
+        [
+          38,
+          5
+        ],
+        [
+          48,
+          2
+        ]
+      ],
+      "description": "HMN Tech (ex-Huawei Marine) undersea cable. Pakistan, Kenya, France.",
+      "strategic": "high"
+    },
+    {
+      "id": "cn_r06",
+      "name": "Arctic Silk Road",
+      "nation": "cn",
+      "type": "maritime",
+      "color": "#00aaff",
+      "coords": [
+        [
+          22,
+          121
+        ],
+        [
+          35,
+          139
+        ],
+        [
+          55,
+          170
+        ],
+        [
+          70,
+          160
+        ],
+        [
+          71,
+          -10
+        ],
+        [
+          65,
+          -14
+        ],
+        [
+          60,
+          -5
+        ],
+        [
+          52,
+          5
+        ]
+      ],
+      "description": "Northern Sea Route. Russia-China strategic partnership. Opens as Arctic ice melts.",
+      "strategic": "medium"
+    },
+    {
+      "id": "cn_r07",
+      "name": "Maritime Silk Road \u2014 Africa Branch",
+      "nation": "cn",
+      "type": "maritime",
+      "color": "#ff6644",
+      "coords": [
+        [
+          1.3,
+          103.8
+        ],
+        [
+          -4,
+          40
+        ],
+        [
+          -11,
+          35
+        ],
+        [
+          -26,
+          28
+        ],
+        [
+          -34,
+          18
+        ]
+      ],
+      "description": "East Africa maritime route. Mombasa, Dar es Salaam, Maputo port investments.",
+      "strategic": "high"
+    },
+    {
+      "id": "us_r01",
+      "name": "US Pacific Fleet Corridor",
+      "nation": "us",
+      "type": "maritime",
+      "color": "#4488ff",
+      "coords": [
+        [
+          21.3,
+          -157.9
+        ],
+        [
+          35,
+          140
+        ],
+        [
+          13.6,
+          144.9
+        ],
+        [
+          26.4,
+          127.8
+        ],
+        [
+          1.3,
+          103.8
+        ]
+      ],
+      "description": "7th Fleet patrol corridor. Pearl Harbor \u2192 Japan \u2192 Guam \u2192 Philippines \u2192 Singapore.",
+      "strategic": "critical"
+    },
+    {
+      "id": "us_r02",
+      "name": "US Atlantic Fleet Lane",
+      "nation": "us",
+      "type": "maritime",
+      "color": "#4488ff",
+      "coords": [
+        [
+          32,
+          -80
+        ],
+        [
+          40,
+          -74
+        ],
+        [
+          36,
+          -6
+        ],
+        [
+          26,
+          50
+        ],
+        [
+          18,
+          -66
+        ]
+      ],
+      "description": "2nd Fleet Atlantic patrol. Norfolk \u2192 Mediterranean \u2192 Caribbean.",
+      "strategic": "high"
+    },
+    {
+      "id": "us_r03",
+      "name": "Diego Garcia \u2014 Gulf Force Projection",
+      "nation": "us",
+      "type": "maritime",
+      "color": "#4488ff",
+      "coords": [
+        [
+          -7.3,
+          72.4
+        ],
+        [
+          12,
+          44
+        ],
+        [
+          26.2,
+          50.6
+        ],
+        [
+          25.1,
+          56.4
+        ]
+      ],
+      "description": "Indian Ocean power projection. B-52 staging \u2192 Persian Gulf 5th Fleet.",
+      "strategic": "critical"
+    },
+    {
+      "id": "us_r04",
+      "name": "Trans-Pacific SLOC (Supply)",
+      "nation": "us",
+      "type": "maritime",
+      "color": "#2266ff",
+      "coords": [
+        [
+          33.7,
+          -118
+        ],
+        [
+          21,
+          -157
+        ],
+        [
+          35,
+          140
+        ],
+        [
+          1.3,
+          103.8
+        ],
+        [
+          22,
+          114
+        ]
+      ],
+      "description": "Primary US trade and logistics SLOC. Los Angeles \u2192 Japan \u2192 SE Asia.",
+      "strategic": "high"
+    },
+    {
+      "id": "us_r05",
+      "name": "Arctic Early Warning Chain",
+      "nation": "us",
+      "type": "land",
+      "color": "#0066aa",
+      "coords": [
+        [
+          71,
+          -157
+        ],
+        [
+          71,
+          -140
+        ],
+        [
+          71,
+          -70
+        ],
+        [
+          65,
+          -50
+        ],
+        [
+          65,
+          -20
+        ],
+        [
+          70,
+          -25
+        ]
+      ],
+      "description": "DEW/North Warning System radar chain. Alaska \u2192 Canada \u2192 Greenland \u2192 Iceland.",
+      "strategic": "high"
+    },
+    {
+      "id": "ru_r01",
+      "name": "Northern Sea Route (Russia)",
+      "nation": "ru",
+      "type": "maritime",
+      "color": "#ff4444",
+      "coords": [
+        [
+          69,
+          33
+        ],
+        [
+          71,
+          60
+        ],
+        [
+          71,
+          90
+        ],
+        [
+          71,
+          140
+        ],
+        [
+          68,
+          178
+        ]
+      ],
+      "description": "Russian Arctic trade route. Murmansk \u2192 Pacific. 40% shorter than Suez.",
+      "strategic": "high"
+    },
+    {
+      "id": "ru_r02",
+      "name": "Russian Gas Pipeline \u2014 Nord Stream (severed)",
+      "nation": "ru",
+      "type": "pipeline",
+      "color": "#aa2222",
+      "coords": [
+        [
+          59,
+          28
+        ],
+        [
+          57,
+          15
+        ],
+        [
+          54,
+          9
+        ],
+        [
+          51,
+          7
+        ]
+      ],
+      "description": "Nord Stream 1 and 2. Sabotaged 2022. Previously 55B m\u00b3/year to Germany.",
+      "strategic": "critical"
+    },
+    {
+      "id": "ru_r03",
+      "name": "TurkStream Pipeline",
+      "nation": "ru",
+      "type": "pipeline",
+      "color": "#cc3333",
+      "coords": [
+        [
+          43,
+          40
+        ],
+        [
+          41,
+          36
+        ],
+        [
+          41,
+          32
+        ],
+        [
+          41,
+          29
+        ],
+        [
+          38,
+          26
+        ]
+      ],
+      "description": "Active. 31.5B m\u00b3/yr. Russia \u2192 Turkey \u2192 South/SE Europe. Bypasses Ukraine.",
+      "strategic": "high"
+    },
+    {
+      "id": "ru_r04",
+      "name": "Trans-Siberian Railway",
+      "nation": "ru",
+      "type": "rail",
+      "color": "#cc2222",
+      "coords": [
+        [
+          55,
+          38
+        ],
+        [
+          55,
+          55
+        ],
+        [
+          55,
+          73
+        ],
+        [
+          55,
+          100
+        ],
+        [
+          52,
+          110
+        ],
+        [
+          51,
+          135
+        ],
+        [
+          43,
+          131
+        ]
+      ],
+      "description": "9288km Moscow \u2192 Vladivostok. Military logistics spine. ICBM transport capable.",
+      "strategic": "high"
+    },
+    {
+      "id": "ru_r05",
+      "name": "Siberia-2 Gas Pipeline (China)",
+      "nation": "ru",
+      "type": "pipeline",
+      "color": "#cc3300",
+      "coords": [
+        [
+          51,
+          135
+        ],
+        [
+          52,
+          120
+        ],
+        [
+          48,
+          108
+        ],
+        [
+          44,
+          98
+        ],
+        [
+          40,
+          90
+        ],
+        [
+          39,
+          89
+        ]
+      ],
+      "description": "Power of Siberia 2 (planned). Russia \u2192 Mongolia \u2192 China. 50B m\u00b3/yr.",
+      "strategic": "medium"
+    },
+    {
+      "id": "in_r01",
+      "name": "India Maritime Trade Route (IOR)",
+      "nation": "in",
+      "type": "maritime",
+      "color": "#ff8800",
+      "coords": [
+        [
+          14.8,
+          74.1
+        ],
+        [
+          8,
+          77
+        ],
+        [
+          1,
+          73
+        ],
+        [
+          12,
+          50
+        ],
+        [
+          26,
+          57
+        ],
+        [
+          30,
+          32
+        ]
+      ],
+      "description": "Indian Navy patrol. Karwar \u2192 Bay of Bengal \u2192 Indian Ocean \u2192 Suez access.",
+      "strategic": "high"
+    },
+    {
+      "id": "in_r02",
+      "name": "India-Middle East Corridor (IMEC)",
+      "nation": "in",
+      "type": "maritime",
+      "color": "#ffaa00",
+      "coords": [
+        [
+          18.9,
+          72.8
+        ],
+        [
+          12,
+          44
+        ],
+        [
+          25.2,
+          55.3
+        ],
+        [
+          26.2,
+          50.6
+        ],
+        [
+          29,
+          48
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          51,
+          5
+        ]
+      ],
+      "description": "G20 IMEC rail+ship corridor. India \u2192 UAE \u2192 Saudi \u2192 Jordan \u2192 Israel \u2192 Europe.",
+      "strategic": "high"
+    },
+    {
+      "id": "in_r03",
+      "name": "India-Myanmar-Thailand Highway",
+      "nation": "in",
+      "type": "land",
+      "color": "#ff8800",
+      "coords": [
+        [
+          25,
+          93
+        ],
+        [
+          23,
+          96
+        ],
+        [
+          20,
+          96
+        ],
+        [
+          18,
+          100
+        ],
+        [
+          16,
+          101
+        ]
+      ],
+      "description": "Act East policy. Connects NE India to SE Asia overland. Counterweight to China.",
+      "strategic": "medium"
+    },
+    {
+      "id": "in_r04",
+      "name": "Chabahar Corridor (India-Iran)",
+      "nation": "in",
+      "type": "maritime",
+      "color": "#ffaa00",
+      "coords": [
+        [
+          18.9,
+          72.8
+        ],
+        [
+          25.1,
+          62.3
+        ],
+        [
+          25.3,
+          60.6
+        ],
+        [
+          30,
+          59
+        ],
+        [
+          35,
+          64
+        ],
+        [
+          40,
+          67
+        ],
+        [
+          41,
+          69
+        ]
+      ],
+      "description": "India bypasses Pakistan via Iran Chabahar port \u2192 Central Asia. Counters CPEC.",
+      "strategic": "high"
+    },
+    {
+      "id": "eu_r01",
+      "name": "GIUK Gap \u2014 NATO ASW Barrier",
+      "nation": "nato",
+      "type": "maritime",
+      "color": "#3366ff",
+      "coords": [
+        [
+          76,
+          -10
+        ],
+        [
+          65,
+          -15
+        ],
+        [
+          64,
+          -17
+        ],
+        [
+          58,
+          -4
+        ],
+        [
+          55,
+          1
+        ]
+      ],
+      "description": "Greenland-Iceland-UK Gap. NATO chokepoint to contain Russian SSBN breakout into Atlantic.",
+      "strategic": "critical"
+    },
+    {
+      "id": "eu_r02",
+      "name": "Baltic Sea NATO Routes",
+      "nation": "nato",
+      "type": "maritime",
+      "color": "#3366ff",
+      "coords": [
+        [
+          55,
+          10
+        ],
+        [
+          57,
+          18
+        ],
+        [
+          59,
+          24
+        ],
+        [
+          60,
+          25
+        ],
+        [
+          60,
+          21
+        ]
+      ],
+      "description": "NATO Baltic Sea access. Critical for resupply of Estonia, Latvia, Lithuania.",
+      "strategic": "high"
+    },
+    {
+      "id": "eu_r03",
+      "name": "EU Gas Interconnectors (LNG)",
+      "nation": "eu",
+      "type": "pipeline",
+      "color": "#00aaff",
+      "coords": [
+        [
+          36,
+          -5
+        ],
+        [
+          38,
+          0
+        ],
+        [
+          44,
+          4
+        ],
+        [
+          48,
+          7
+        ],
+        [
+          52,
+          10
+        ],
+        [
+          54,
+          18
+        ],
+        [
+          56,
+          24
+        ]
+      ],
+      "description": "EU alternative gas routes post-Nord Stream. Iberian LNG \u2192 Germany, Poland.",
+      "strategic": "high"
+    },
+    {
+      "id": "eu_r04",
+      "name": "Eastern Flank NATO Supply (RFP)",
+      "nation": "nato",
+      "type": "land",
+      "color": "#4488ff",
+      "coords": [
+        [
+          49,
+          -4
+        ],
+        [
+          50,
+          14
+        ],
+        [
+          52,
+          23
+        ],
+        [
+          54,
+          23
+        ],
+        [
+          59,
+          24
+        ]
+      ],
+      "description": "NATO Response Force logistics corridor. Western Europe \u2192 Poland \u2192 Baltic states.",
+      "strategic": "high"
+    },
+    {
+      "id": "me_r01",
+      "name": "Iran Counter-Strait Strategy",
+      "nation": "ir",
+      "type": "maritime",
+      "color": "#ff3366",
+      "coords": [
+        [
+          24,
+          58
+        ],
+        [
+          25,
+          57
+        ],
+        [
+          26,
+          56.5
+        ],
+        [
+          27,
+          56
+        ],
+        [
+          26.5,
+          54
+        ],
+        [
+          24.5,
+          51
+        ]
+      ],
+      "description": "IRGC Navy Strait of Hormuz closure strategy. Mines, fast boats, ASM missiles.",
+      "strategic": "critical"
+    },
+    {
+      "id": "me_r02",
+      "name": "Turkey Black Sea-Mediterranean Chokepoint",
+      "nation": "tr",
+      "type": "maritime",
+      "color": "#cc8800",
+      "coords": [
+        [
+          41.1,
+          29.1
+        ],
+        [
+          40,
+          27
+        ],
+        [
+          38,
+          26
+        ],
+        [
+          37,
+          24
+        ],
+        [
+          35,
+          24
+        ],
+        [
+          34,
+          33
+        ]
+      ],
+      "description": "Turkish Straits control. Montreux Convention limits warships. Black Sea access control.",
+      "strategic": "critical"
+    },
+    {
+      "id": "me_r03",
+      "name": "Israel-Greece Energy Corridor (EastMed)",
+      "nation": "il",
+      "type": "pipeline",
+      "color": "#ffaa00",
+      "coords": [
+        [
+          32,
+          34
+        ],
+        [
+          34,
+          33
+        ],
+        [
+          37,
+          22
+        ],
+        [
+          38,
+          20
+        ],
+        [
+          38,
+          14
+        ],
+        [
+          44,
+          10
+        ],
+        [
+          45,
+          8
+        ]
+      ],
+      "description": "Proposed EastMed pipeline. Israel+Cyprus gas \u2192 Greece \u2192 Italy. Geopolitical dispute.",
+      "strategic": "medium"
+    },
+    {
+      "id": "af_r01",
+      "name": "Sahel Energy Corridor (Niger Pipeline)",
+      "nation": "ne",
+      "type": "pipeline",
+      "color": "#cc8800",
+      "coords": [
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          18,
+          14
+        ],
+        [
+          23,
+          14
+        ],
+        [
+          30,
+          28
+        ]
+      ],
+      "description": "Niger-Benin oil pipeline. China CNPC. Bypasses Mali instability.",
+      "strategic": "medium"
+    },
+    {
+      "id": "af_r02",
+      "name": "East Africa SGR (Kenya-Uganda)",
+      "nation": "ke",
+      "type": "rail",
+      "color": "#aa6600",
+      "coords": [
+        [
+          -4,
+          39.7
+        ],
+        [
+          -1,
+          36.5
+        ],
+        [
+          0,
+          34.5
+        ],
+        [
+          0.3,
+          32.6
+        ]
+      ],
+      "description": "Chinese-financed Standard Gauge Railway. Mombasa \u2192 Nairobi \u2192 Uganda. Debt trap concerns.",
+      "strategic": "medium"
+    },
+    {
+      "id": "af_r03",
+      "name": "Red Sea Houthi Attack Zone",
+      "nation": "ye",
+      "type": "threat",
+      "color": "#ff2244",
+      "coords": [
+        [
+          15,
+          42
+        ],
+        [
+          16,
+          43
+        ],
+        [
+          14,
+          44
+        ],
+        [
+          13,
+          43
+        ],
+        [
+          12,
+          44
+        ],
+        [
+          12,
+          43.5
+        ]
+      ],
+      "description": "Houthi anti-ship missile and drone threat zone. Commercial shipping disruption 2024.",
+      "strategic": "critical"
+    },
+    {
+      "id": "ap_r01",
+      "name": "South Korea-Japan Strait (SLOC)",
+      "nation": "kr",
+      "type": "maritime",
+      "color": "#88aaff",
+      "coords": [
+        [
+          35,
+          128
+        ],
+        [
+          34,
+          130
+        ],
+        [
+          34,
+          135
+        ],
+        [
+          35,
+          140
+        ]
+      ],
+      "description": "Korea Strait. Critical for Japan energy imports. N.Korea submarine threat.",
+      "strategic": "high"
+    },
+    {
+      "id": "ap_r02",
+      "name": "Taiwan Strait SLOC (50% world containers)",
+      "nation": "tw",
+      "type": "maritime",
+      "color": "#00aaff",
+      "coords": [
+        [
+          22,
+          120
+        ],
+        [
+          24,
+          120
+        ],
+        [
+          26,
+          120
+        ],
+        [
+          28,
+          122
+        ]
+      ],
+      "description": "50% of global container traffic. TSMC semiconductor supply chain critical node.",
+      "strategic": "critical"
+    },
+    {
+      "id": "ap_r03",
+      "name": "Indonesia Archipelago Routes (Lombok/Sunda)",
+      "nation": "id",
+      "type": "maritime",
+      "color": "#88aaff",
+      "coords": [
+        [
+          -8.7,
+          115.7
+        ],
+        [
+          -6,
+          106
+        ],
+        [
+          -5,
+          105
+        ],
+        [
+          1,
+          103
+        ],
+        [
+          5,
+          100
+        ]
+      ],
+      "description": "Alternative Malacca routes. PLA Navy uses Lombok Strait for submarine operations.",
+      "strategic": "high"
+    },
+    {
+      "id": "ap_r04",
+      "name": "Japan Sea Lines of Communication",
+      "nation": "jp",
+      "type": "maritime",
+      "color": "#88aaff",
+      "coords": [
+        [
+          35,
+          139
+        ],
+        [
+          35,
+          145
+        ],
+        [
+          28,
+          142
+        ],
+        [
+          26,
+          131
+        ],
+        [
+          25,
+          55
+        ]
+      ],
+      "description": "Japan 90%+ energy imports via sea. Persian Gulf SLOC critical. JMSDF patrols.",
+      "strategic": "critical"
+    }
+  ]
+}

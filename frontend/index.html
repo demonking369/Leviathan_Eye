@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leviathan_Eye — Global Intelligence Dashboard</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/5.0.0/satellite.min.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    :root {
+      --bg: #060810;
+      --panel: #0c0f18;
+      --border: #1a2438;
+      --accent: #00d4ff;
+      --red: #ff3333;
+      --orange: #ff8800;
+      --yellow: #ffcc00;
+      --green: #00ff88;
+      --purple: #aa44ff;
+      --text: #d0e4f4;
+      --dim: #4a6080
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--bg);
+      font-family: 'Courier New', monospace;
+      color: var(--text)
+    }
+
+    #cesiumContainer {
+      position: absolute;
+      inset: 0;
+      z-index: 1
+    }
+
+    .cesium-viewer-bottom,
+    .cesium-viewer-animationContainer,
+    .cesium-viewer-timelineContainer,
+    .cesium-viewer-fullscreenContainer,
+    .cesium-viewer-infoBoxContainer,
+    .cesium-viewer-selectionIndicatorContainer,
+    .cesium-viewer-toolbar,
+    .cesium-credit-logoContainer,
+    .cesium-credit-textContainer {
+      display: none !important
+    }
+
+    .cesium-widget-credits {
+      display: none !important
+    }
+
+    #hud-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: linear-gradient(180deg, rgba(6, 8, 16, .98) 0%, transparent 100%);
+      padding: 8px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--border);
+      height: 48px
+    }
+
+    .logo {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 4px;
+      white-space: nowrap
+    }
+
+    .logo span {
+      color: #fff;
+      font-size: 10px;
+      opacity: .5;
+      margin-left: 5px
+    }
+
+    #war-ticker {
+      flex: 1;
+      overflow: hidden;
+      height: 20px
+    }
+
+    .ticker-inner {
+      white-space: nowrap;
+      display: flex;
+      gap: 40px;
+      animation: ticker 35s linear infinite
+    }
+
+    @keyframes ticker {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    .ti {
+      font-size: 10px;
+      color: var(--red);
+      font-weight: 600
+    }
+
+    .ti.el {
+      color: var(--orange)
+    }
+
+    .ti.md {
+      color: var(--yellow)
+    }
+
+    #clock {
+      font-size: 11px;
+      color: var(--accent);
+      white-space: nowrap;
+      font-weight: 700
+    }
+
+    #coord-display {
+      font-size: 10px;
+      color: var(--dim);
+      white-space: nowrap;
+      min-width: 140px;
+      text-align: right
+    }
+
+    #sidebar {
+      position: fixed;
+      left: 0;
+      top: 48px;
+      bottom: 0;
+      width: 250px;
+      z-index: 90;
+      background: rgba(6, 8, 16, .97);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      transition: transform .3s
+    }
+
+    #sidebar::-webkit-scrollbar {
+      width: 3px
+    }
+
+    #sidebar::-webkit-scrollbar-thumb {
+      background: var(--border)
+    }
+
+    .ss {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border)
+    }
+
+    .st {
+      font-size: 9px;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .badge {
+      background: rgba(0, 212, 255, .1);
+      color: var(--accent);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 8px
+    }
+
+    .lb {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 7px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      color: var(--dim);
+      transition: all .2s;
+      user-select: none;
+      width: 100%;
+      border: 1px solid transparent;
+      position: relative;
+      overflow: hidden
+    }
+
+    .lb:hover {
+      background: rgba(255, 255, 255, .04);
+      color: var(--text)
+    }
+
+    .lb.on {
+      color: var(--text);
+      border-color: rgba(255, 255, 255, .07);
+      background: rgba(255, 255, 255, .03)
+    }
+
+    .ld {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--dim);
+      flex-shrink: 0;
+      opacity: .4;
+      transition: opacity .2s
+    }
+
+    .lb.on .ld {
+      opacity: 1
+    }
+
+    .lc {
+      margin-left: auto;
+      font-size: 9px;
+      color: var(--dim);
+      background: rgba(255, 255, 255, .06);
+      padding: 1px 5px;
+      border-radius: 3px
+    }
+
+    .lb.on .lc {
+      color: var(--accent)
+    }
+
+    .sg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      padding: 2px 0
+    }
+
+    .sc {
+      background: rgba(255, 255, 255, .02);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 6px 8px;
+      text-align: center
+    }
+
+    .sn {
+      font-size: 18px;
+      font-weight: 700;
+      font-family: monospace;
+      color: var(--accent);
+      line-height: 1.1
+    }
+
+    .sl {
+      font-size: 8px;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px
+    }
+
+    .wi {
+      padding: 5px 7px;
+      border-radius: 4px;
+      margin-bottom: 3px;
+      font-size: 10px;
+      cursor: pointer;
+      transition: background .15s
+    }
+
+    .wi:hover {
+      background: rgba(255, 255, 255, .04)
+    }
+
+    .wi.critical {
+      border-left: 2px solid #ff1111;
+      background: rgba(255, 17, 17, .06)
+    }
+
+    .wi.high {
+      border-left: 2px solid #ff6600;
+      background: rgba(255, 102, 0, .06)
+    }
+
+    .wi.medium {
+      border-left: 2px solid #44aaff;
+      background: rgba(68, 170, 255, .06)
+    }
+
+    .wn {
+      font-weight: 600;
+      font-size: 10px
+    }
+
+    .wv {
+      font-size: 9px;
+      color: var(--dim)
+    }
+
+    #rp {
+      position: fixed;
+      right: 0;
+      top: 48px;
+      bottom: 0;
+      width: 290px;
+      z-index: 90;
+      background: rgba(6, 8, 16, .97);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column
+    }
+
+    .pts {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0
+    }
+
+    .tb {
+      flex: 1;
+      padding: 7px;
+      font-size: 9px;
+      text-align: center;
+      cursor: pointer;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid transparent;
+      transition: all .2s;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      font-family: inherit
+    }
+
+    .tb.on {
+      color: var(--accent);
+      border-bottom-color: var(--accent)
+    }
+
+    .tc {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      display: none
+    }
+
+    .tc.on {
+      display: block
+    }
+
+    .tc::-webkit-scrollbar {
+      width: 3px
+    }
+
+    .tc::-webkit-scrollbar-thumb {
+      background: var(--border)
+    }
+
+    .det-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 4px;
+      line-height: 1.3
+    }
+
+    .det-badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 3px;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 8px
+    }
+
+    .det-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+      font-size: 10px
+    }
+
+    .det-row:last-child {
+      border: none
+    }
+
+    .det-lbl {
+      color: var(--dim);
+      flex-shrink: 0;
+      margin-right: 8px
+    }
+
+    .det-val {
+      color: var(--text);
+      text-align: right;
+      word-break: break-word
+    }
+
+    .det-btn {
+      flex: 1;
+      padding: 5px;
+      background: rgba(0, 212, 255, .08);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 9px;
+      text-align: center;
+      font-family: inherit
+    }
+
+    .det-btn:hover {
+      background: rgba(0, 212, 255, .2)
+    }
+
+    .det-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: var(--dim);
+      font-size: 11px;
+      gap: 10px;
+      padding: 20px;
+      text-align: center
+    }
+
+    .det-empty-icon {
+      font-size: 28px;
+      opacity: 0.3
+    }
+
+    .ni {
+      padding: 7px;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, .02);
+      border: 1px solid var(--border);
+      transition: background .15s
+    }
+
+    .ni:hover {
+      background: rgba(255, 255, 255, .05)
+    }
+
+    .nt {
+      font-size: 10px;
+      line-height: 1.4;
+      margin-bottom: 3px
+    }
+
+    .nm {
+      font-size: 9px;
+      color: var(--dim)
+    }
+
+    #sb {
+      position: fixed;
+      top: 48px;
+      left: 250px;
+      right: 290px;
+      z-index: 95;
+      padding: 6px 10px;
+      background: rgba(6, 8, 16, .98);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 7px;
+      align-items: center
+    }
+
+    #si {
+      flex: 1;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 5px 9px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: inherit;
+      outline: none
+    }
+
+    #si:focus {
+      border-color: var(--accent)
+    }
+
+    #si::placeholder {
+      color: var(--dim)
+    }
+
+    #sbtn {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      font-weight: 700;
+      font-family: inherit
+    }
+
+    #sr {
+      position: fixed;
+      top: 86px;
+      left: 250px;
+      right: 290px;
+      z-index: 96;
+      background: rgba(6, 8, 16, .99);
+      border: 1px solid var(--border);
+      border-top: none;
+      max-height: 180px;
+      overflow-y: auto;
+      display: none
+    }
+
+    .sri {
+      padding: 7px 10px;
+      cursor: pointer;
+      font-size: 10px;
+      border-bottom: 1px solid var(--border);
+      transition: background .1s
+    }
+
+    .sri:hover {
+      background: rgba(0, 212, 255, .08)
+    }
+
+    .srt {
+      font-size: 8px;
+      color: var(--accent);
+      margin-right: 5px
+    }
+
+    .cb {
+      width: 32px;
+      height: 32px;
+      background: rgba(12, 15, 24, .95);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--text);
+      transition: all .15s
+    }
+
+    .cb:hover {
+      border-color: var(--accent);
+      color: var(--accent)
+    }
+
+    #ctrl-btns {
+      position: fixed;
+      bottom: 28px;
+      right: 300px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 5px
+    }
+
+    #statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 250px;
+      right: 290px;
+      z-index: 90;
+      background: rgba(6, 8, 16, .98);
+      border-top: 1px solid var(--border);
+      padding: 3px 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 9px;
+      color: var(--dim)
+    }
+
+    .sdot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 3px;
+      animation: sp 2s infinite
+    }
+
+    @keyframes sp {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .3
+      }
+    }
+
+    .dg {
+      background: var(--green)
+    }
+
+    #loading {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      transition: opacity .4s
+    }
+
+    .ll {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 6px
+    }
+
+    .ls {
+      font-size: 11px;
+      color: var(--dim);
+      letter-spacing: 3px
+    }
+
+    .lb2 {
+      width: 280px;
+      height: 1px;
+      background: var(--border);
+      position: relative;
+      overflow: hidden
+    }
+
+    .lf {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: var(--accent);
+      animation: lba 2.5s ease forwards
+    }
+
+    @keyframes lba {
+      0% {
+        width: 0%
+      }
+
+      60% {
+        width: 80%
+      }
+
+      100% {
+        width: 100%
+      }
+    }
+
+    .lp {
+      font-size: 10px;
+      color: var(--dim);
+      min-height: 14px
+    }
+
+    #detail-map {
+      width: 100%;
+      height: 180px;
+      border-radius: 5px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: #0a1420
+    }
+
+    .sfc {
+      padding: 2px 8px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 9px;
+      color: var(--dim);
+      transition: all .15s;
+      background: none;
+      font-family: inherit
+    }
+
+    .sfc.on {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(0, 212, 255, .08)
+    }
+
+    /* ═══ BOTTOM DASHBOARD ═══ */
+    #dash-panel {
+      position: fixed;
+      bottom: 0;
+      left: 250px;
+      right: 290px;
+      height: 340px;
+      z-index: 85;
+      background: rgba(6, 8, 16, .98);
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 1px;
+      background-color: var(--border);
+      /* acts as grid borders */
+      font-size: 10px;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #dash-panel.open {
+      transform: translateY(0);
+    }
+
+    .dash-col {
+      background: rgba(6, 8, 16, .98);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dash-col.news {
+      flex: 0 0 320px;
+    }
+
+    .dash-col.webcams {
+      flex: 1;
+    }
+
+    .dash-col.ai {
+      flex: 0 0 250px;
+    }
+
+    .dh {
+      padding: 6px 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .dcount {
+      color: var(--red);
+      margin-left: 5px;
+    }
+
+    .sub-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stb {
+      flex: 1;
+      text-align: center;
+      padding: 5px;
+      cursor: pointer;
+      color: var(--dim);
+      background: none;
+      border: none;
+      border-right: 1px solid var(--border);
+      font-family: inherit;
+      font-size: 8px;
+      text-transform: uppercase;
+    }
+
+    .stb:last-child {
+      border-right: none;
+    }
+
+    .stb.on {
+      background: rgba(255, 17, 17, .2);
+      color: #fff;
+    }
+
+    .vid-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      flex: 1;
+    }
+
+    .vid-grid>div {
+      background: #000;
+      position: relative;
+    }
+
+    .vid-grid iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .vid-label {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-size: 9px;
+      z-index: 10;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    /* ═══ COUNTRY INTEL PANEL ═══ */
+    #country-panel {
+      position: fixed;
+      top: 48px;
+      bottom: 0;
+      right: 0;
+      width: 400px;
+      z-index: 92;
+      background: rgba(12, 15, 24, .98);
+      border-left: 1px solid var(--border);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      overflow-y: auto;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #country-panel.open {
+      transform: translateX(0);
+    }
+
+    .cp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .cp-flag {
+      font-size: 24px;
+      font-family: monospace;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+    .cp-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .cp-sub {
+      color: var(--dim);
+      font-size: 10px;
+      margin-top: 2px;
+    }
+
+    .cp-box {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 12px;
+    }
+
+    .cp-box-title {
+      font-size: 10px;
+      color: var(--text);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .cp-score-row {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .cp-score {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--yellow);
+    }
+
+    .cp-score .max {
+      font-size: 14px;
+      color: var(--dim);
+      font-weight: 400;
+    }
+
+    .cp-metric {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 11px;
+      color: var(--dim);
+      align-items: center;
+    }
+
+    .cp-bar-bg {
+      flex: 1;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 0 10px;
+      border-radius: 2px;
+    }
+
+    .cp-bar-fg {
+      height: 100%;
+      background: var(--green);
+      border-radius: 2px;
+    }
+
+    @media(max-width:768px) {
+      #sidebar {
+        width: 220px;
+        transform: translateX(-100%);
+        z-index: 200
+      }
+
+      #sidebar.mob-open {
+        transform: translateX(0)
+      }
+
+      #rp {
+        width: 100%;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        height: 0;
+        border-left: none;
+        border-top: 1px solid var(--border);
+        transition: height .3s;
+        z-index: 190
+      }
+
+      #rp.mob-open {
+        height: 55vh
+      }
+
+      #sb {
+        left: 0;
+        right: 0
+      }
+
+      #sr {
+        left: 0;
+        right: 0
+      }
+
+      #statusbar {
+        left: 0;
+        right: 0
+      }
+
+      #ctrl-btns {
+        right: 10px;
+        bottom: 60px
+      }
+    }
+
+    @media(min-width:769px) {
+      #mob-sidebar-btn {
+        display: none
+      }
+    }
+
+    #mob-sidebar-btn {
+      position: fixed;
+      top: 52px;
+      left: 6px;
+      z-index: 201;
+      width: 28px;
+      height: 28px;
+      background: rgba(12, 15, 24, .95);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--dim)
+    }
+
+    .sfc {
+      background: rgba(0, 212, 255, 0.08);
+      border: 1px solid var(--border);
+      color: var(--dim);
+      padding: 3px 7px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all .2s
+    }
+
+    .sfc:hover {
+      background: rgba(0, 212, 255, 0.15);
+      color: var(--accent)
+    }
+
+    .sfc.on {
+      background: rgba(0, 212, 255, 0.2);
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 6px rgba(0, 212, 255, 0.3)
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loading">
+    <div class="ll">Leviathan_Eye</div>
+    <div class="ls">GLOBAL INTELLIGENCE DASHBOARD</div>
+    <div class="lb2">
+      <div class="lf"></div>
+    </div>
+    <div class="lp" id="lphase">Initializing 3D globe...</div>
+  </div>
+  <div id="hud-top">
+    <div class="logo">Leviathan_Eye<span>V9</span></div>
+    <div id="war-ticker">
+      <div class="ticker-inner" id="ticker-inner">
+        <span class="ti">⚡ UKRAINE WAR — ACTIVE COMBAT</span>
+        <span class="ti">⚡ ISRAEL-IRAN THEATER — CRITICAL</span>
+        <span class="ti el">▲ SUDAN CIVIL WAR — ONGOING</span>
+        <span class="ti el">▲ MYANMAR CIVIL WAR — ACTIVE</span>
+        <span class="ti md">● TAIWAN STRAIT — ELEVATED</span>
+        <span class="ti md">● RED SEA — HOUTHI OPS ACTIVE</span>
+        <span class="ti">⚡ UKRAINE WAR — ACTIVE COMBAT</span>
+        <span class="ti">⚡ ISRAEL-IRAN THEATER — CRITICAL</span>
+        <span class="ti el">▲ SUDAN CIVIL WAR — ONGOING</span>
+        <span class="ti el">▲ MYANMAR CIVIL WAR — ACTIVE</span>
+      </div>
+    </div>
+    <div id="clock">UTC 00:00:00</div>
+    <div id="coord-display">20.0°N 78.0°E</div>
+  </div>
+  <div id="sb">
+    <input id="si" type="text" placeholder="Search: 'India air bases' / 'China naval' / 'nuclear sites'..."
+      onkeydown="if(event.key==='Enter')doSearch();if(event.key==='Escape')closeSearch()" />
+    <button id="sbtn" onclick="doSearch()">SEARCH</button>
+    <button onclick="closeSearch()"
+      style="background:rgba(255,255,255,.08);border:1px solid var(--border);color:var(--dim);padding:5px 8px;border-radius:4px;cursor:pointer;font-size:12px;font-family:inherit">✕</button>
+  </div>
+  <div id="sr"></div>
+  <div id="sidebar">
+    <div class="ss">
+      <div class="st">📊 Database</div>
+      <div class="sg">
+        <div class="sc">
+          <div class="sn" id="st-bases">—</div>
+          <div class="sl">Mil.Bases</div>
+        </div>
+        <div class="sc">
+          <div class="sn" id="st-cnfl">—</div>
+          <div class="sl">Conflicts</div>
+        </div>
+        <div class="sc">
+          <div class="sn" id="st-wars">—</div>
+          <div class="sl">War Zones</div>
+        </div>
+        <div class="sc">
+          <div class="sn" id="st-nuke">—</div>
+          <div class="sl">Nuclear</div>
+        </div>
+        <div class="sc">
+          <div class="sn" id="st-sats">—</div>
+          <div class="sl">Satellites</div>
+        </div>
+      </div>
+    </div>
+    <div class="ss">
+      <div class="st">🗂 Map Layers <span class="badge">click to load</span></div>
+      <div class="lb" id="lb-airbases" onclick="toggleLayer('air_base',this)">
+        <div class="ld" style="background:#ff9933"></div>Air Bases<span class="lc" id="lc-airbases">—</span>
+      </div>
+      <div class="lb" id="lb-naval" onclick="toggleLayer('naval_base',this)">
+        <div class="ld" style="background:#4488ff"></div>Naval Bases<span class="lc" id="lc-naval">—</span>
+      </div>
+      <div class="lb" id="lb-military" onclick="toggleLayer('military_base',this)">
+        <div class="ld" style="background:#ff4444"></div>Military / Army<span class="lc" id="lc-military">—</span>
+      </div>
+      <div class="lb" id="lb-nuclear" onclick="toggleLayer('nuclear',this)">
+        <div class="ld" style="background:#ff44ff"></div>Nuclear Sites<span class="lc" id="lc-nuclear">—</span>
+      </div>
+      <div class="lb" id="lb-missile" onclick="toggleLayer('missile_test',this)">
+        <div class="ld" style="background:#ffcc00"></div>Missile / Space<span class="lc" id="lc-missile">—</span>
+      </div>
+      <div class="lb" id="lb-sigint" onclick="toggleLayer('sigint',this)">
+        <div class="ld" style="background:#aa44ff"></div>SIGINT / Intel<span class="lc" id="lc-sigint">—</span>
+      </div>
+      <div class="lb" id="lb-training" onclick="toggleLayer('training',this)">
+        <div class="ld" style="background:#00ffcc"></div>Training / R&D<span class="lc" id="lc-training">—</span>
+      </div>
+      <div class="lb" id="lb-sats" onclick="toggleSatellites(this)">
+        <div class="ld" style="background:#00d4ff"></div>Live Satellites<span class="lc" id="lc-sats">—</span>
+      </div>
+      <div class="lb on" id="lb-cyber-arcs" onclick="toggleCyberArcs(this)">
+        <div class="ld" style="background:#ff3333"></div>Cyber Attack View<span class="lc" id="lc-cyber-arcs">ON</span>
+      </div>
+      <div class="lb" id="lb-conflicts" onclick="toggleConflicts(this)">
+        <div class="ld" style="background:#ff2222"></div>Conflict Zones<span class="lc" id="lc-conflicts">—</span>
+      </div>
+      <div class="lb" id="lb-nukesites" onclick="toggleNukeSites(this)">
+        <div class="ld" style="background:#ff00ff"></div>Nuclear Arsenals<span class="lc" id="lc-nukesites">—</span>
+      </div>
+    </div>
+    <div class="ss">
+      <div class="st">🔥 Active Conflicts</div>
+      <div id="warlist">
+        <div style="color:var(--dim);font-size:9px">Loading...</div>
+      </div>
+    </div>
+    <div class="ss">
+      <div class="st">🛰 Country Filter</div>
+      <div style="display:flex;flex-wrap:wrap;gap:3px" id="country-filters"></div>
+    </div>
+    <div class="ss">
+      <div class="st">🛰 Constellation Filter (Sats)</div>
+      <div style="display:flex;flex-wrap:wrap;gap:3px" id="sat-filters">
+        <button class="sfc on" onclick="filterSats('ALL',this)">ALL</button>
+        <button class="sfc" onclick="filterSats('US',this)">USA</button>
+        <button class="sfc" onclick="filterSats('CN',this)">CHINA</button>
+        <button class="sfc" onclick="filterSats('RU',this)">RUSSIA</button>
+        <button class="sfc" onclick="filterSats('MILITARY',this)">MILITARY</button>
+        <button class="sfc" onclick="filterSats('OPTICAL',this)">OPTICAL/ISR</button>
+        <button class="sfc" onclick="filterSats('SAR',this)">RADAR/SAR</button>
+        <button class="sfc" onclick="filterSats('STARLINK',this)">STARLINK</button>
+        <button class="sfc" onclick="filterSats('ONEWEB',this)">ONEWEB</button>
+      </div>
+    </div>
+  </div>
+  <button id="mob-sidebar-btn" onclick="document.getElementById('sidebar').classList.toggle('mob-open')">☰</button>
+  <div id="rp">
+    <div class="pts">
+      <button class="tb" id="detail-tab-btn" onclick="switchTab('detail',this)">🎯DET</button>
+      <button class="tb on" onclick="switchTab('news',this)">NEWS</button>
+      <button class="tb" onclick="switchTab('intel',this)">INTEL</button>
+      <button class="tb" onclick="switchTab('cyber',this)">💀CYBER</button>
+      <button class="tb" onclick="switchTab('balance',this)">⚔️BAL</button>
+      <button class="tb" onclick="switchTab('ai',this)">🤖AI</button>
+    </div>
+    <div class="tc" id="tab-detail">
+      <div id="det-empty" class="det-empty">
+        <div class="det-empty-icon">🎯</div>
+        <div>Click any marker on the globe to view base details and satellite imagery</div>
+      </div>
+      <div id="det-content" style="display:none;overflow-y:auto;height:100%">
+        <div style="padding:10px 10px 0 10px">
+          <div id="det-title" class="det-title"></div><span id="det-badge" class="det-badge"></span>
+        </div>
+        <div style="padding:6px 10px 4px 10px">
+          <div style="font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">📡
+            Satellite View</div>
+          <div id="detail-map"></div>
+        </div>
+        <div id="det-rows" style="padding:4px 10px 10px 10px"></div>
+        <div style="padding:0 10px 10px 10px;display:flex;gap:5px">
+          <div class="det-btn" onclick="detZoom()">📍 Zoom</div>
+          <div class="det-btn" onclick="detSearch()">🔍 Intel Search</div>
+        </div>
+      </div>
+    </div>
+    <div class="tc on" id="tab-news">
+      <div id="newslist">
+        <div style="color:var(--dim);font-size:10px">Loading feeds...</div>
+      </div>
+    </div>
+    <div class="tc" id="tab-intel">
+      <div class="st" style="margin-bottom:8px">🔍 OSINT Domains</div>
+      <div id="osint-status"></div>
+    </div>
+    <div class="tc" id="tab-balance">
+      <div style="font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">⚔️
+        Military Balance</div>
+      <div style="display:flex;gap:5px;margin-bottom:8px">
+        <select id="bal-a" onchange="runBalance()"
+          style="flex:1;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text);padding:4px;border-radius:4px;font-size:10px;font-family:inherit">
+          <option value="India" selected>🇮🇳 India</option>
+          <option value="USA">🇺🇸 USA</option>
+          <option value="China">🇨🇳 China</option>
+          <option value="Russia">🇷🇺 Russia</option>
+          <option value="Pakistan">🇵🇰 Pakistan</option>
+          <option value="Israel">🇮🇱 Israel</option>
+          <option value="Iran">🇮🇷 Iran</option>
+          <option value="UK">🇬🇧 UK</option>
+          <option value="France">🇫🇷 France</option>
+          <option value="Turkey">🇹🇷 Turkey</option>
+          <option value="Japan">🇯🇵 Japan</option>
+        </select>
+        <div style="color:var(--accent);align-self:center;font-size:14px;font-weight:700">vs</div>
+        <select id="bal-b" onchange="runBalance()"
+          style="flex:1;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text);padding:4px;border-radius:4px;font-size:10px;font-family:inherit">
+          <option value="India">🇮🇳 India</option>
+          <option value="USA">🇺🇸 USA</option>
+          <option value="China" selected>🇨🇳 China</option>
+          <option value="Russia">🇷🇺 Russia</option>
+          <option value="Pakistan">🇵🇰 Pakistan</option>
+          <option value="Israel">🇮🇱 Israel</option>
+          <option value="Iran">🇮🇷 Iran</option>
+          <option value="UK">🇬🇧 UK</option>
+          <option value="France">🇫🇷 France</option>
+          <option value="Turkey">🇹🇷 Turkey</option>
+          <option value="Japan">🇯🇵 Japan</option>
+        </select>
+      </div>
+      <div id="bal-result"></div>
+    </div>
+    <div class="tc" id="tab-cyber">
+      <div style="font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">💀
+        Global Cyber Attacks — Live Feed</div>
+      <div id="cyber-stats" style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap">
+        <div
+          style="flex:1;min-width:70px;background:rgba(255,51,51,0.08);border:1px solid rgba(255,51,51,0.2);border-radius:4px;padding:6px;text-align:center">
+          <div style="font-size:16px;color:#ff3333;font-weight:700" id="cyber-total">—</div>
+          <div style="font-size:7px;color:var(--dim);text-transform:uppercase">Total Attacks</div>
+        </div>
+        <div
+          style="flex:1;min-width:70px;background:rgba(255,136,0,0.08);border:1px solid rgba(255,136,0,0.2);border-radius:4px;padding:6px;text-align:center">
+          <div style="font-size:16px;color:#ff8800;font-weight:700" id="cyber-types">—</div>
+          <div style="font-size:7px;color:var(--dim);text-transform:uppercase">Attack Types</div>
+        </div>
+        <div
+          style="flex:1;min-width:70px;background:rgba(170,68,255,0.08);border:1px solid rgba(170,68,255,0.2);border-radius:4px;padding:6px;text-align:center">
+          <div style="font-size:16px;color:#aa44ff;font-weight:700" id="cyber-countries">—</div>
+          <div style="font-size:7px;color:var(--dim);text-transform:uppercase">Target Countries</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:5px;margin-bottom:8px">
+        <button class="sfc on" onclick="filterCyber('ALL',this)">ALL</button>
+        <button class="sfc" onclick="filterCyber('DDoS',this)">DDoS</button>
+        <button class="sfc" onclick="filterCyber('Ransomware',this)">RANSOMWARE</button>
+        <button class="sfc" onclick="filterCyber('APT',this)">APT</button>
+        <button class="sfc" onclick="filterCyber('Phishing',this)">PHISHING</button>
+        <button class="sfc" onclick="filterCyber('Wiper',this)">WIPER</button>
+      </div>
+      <div id="cyber-feed" style="overflow-y:auto;height:calc(100vh - 280px);font-size:10px">
+        <div style="color:var(--dim)">Connecting to SIGINT feed...</div>
+      </div>
+    </div>
+    <div class="tc" id="tab-ai">
+      <div style="font-size:10px;color:var(--dim);margin-bottom:8px;text-transform:uppercase">Cyber Intelligence AI
+      </div>
+      <div id="ai-chat-box" style="height:calc(100vh - 140px);display:flex;flex-direction:column;gap:10px;">
+        <div id="ai-messages"
+          style="flex:1;overflow-y:auto;font-size:11px;padding-right:5px;display:flex;flex-direction:column;gap:8px;">
+          <div
+            style="color:var(--accent);background:rgba(0,212,255,0.05);padding:6px;border-radius:4px;border:1px solid rgba(0,212,255,0.1)">
+            Leviathan_Eye AI ONLINE. Awaiting query.</div>
+        </div>
+        <div style="display:flex;gap:5px;">
+          <input type="text" id="ai-input" placeholder="Query intelligence..."
+            style="flex:1;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text);padding:6px;border-radius:4px;font-size:10px;font-family:inherit;outline:none;"
+            onkeydown="if(event.key==='Enter')sendAIQuery()" />
+          <button onclick="sendAIQuery()"
+            style="background:var(--accent);color:#000;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:700;font-family:inherit">SEND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ctrl-btns">
+    <div class="cb" title="Reset to India" onclick="flyToIndia()" style="font-size:9px;font-weight:700">IN</div>
+    <div class="cb" title="Zoom in" onclick="viewer.camera.zoomIn(500000)">+</div>
+    <div class="cb" title="Zoom out" onclick="viewer.camera.zoomOut(500000)">-</div>
+    <div class="cb" title="Reset globe" onclick="flyToIndia()" id="arBtn">⟲</div>
+  </div>
+  <!-- BOTTOM DASHBOARD -->
+  <div id="dash-panel">
+    <!-- LIVE NEWS Column -->
+    <div class="dash-col news">
+      <div class="dh">LIVE NEWS <span class="dcount" id="news-live-count">● 6</span>
+        <button onclick="toggleDashPanel()"
+          style="background:none;border:none;color:var(--dim);cursor:pointer;font-size:14px">✕</button>
+      </div>
+      <div class="sub-tabs">
+        <button class="stb on">AL JAZEERA</button>
+        <button class="stb">SKYNEWS</button>
+        <button class="stb">FRANCE24</button>
+        <button class="stb">DW NEWS</button>
+        <button class="stb">CNN</button>
+        <button class="stb">WION</button>
+      </div>
+      <div style="flex:1;background:#000;position:relative">
+        <iframe id="news-iframe"
+          src="https://www.youtube.com/embed/live_stream?channel=UCNye-wNBqNL5ZzHSJj3l8Bg&autoplay=1&mute=1"
+          allow="autoplay;encrypted-media" allowfullscreen loading="lazy"></iframe>
+        <div class="vid-label">🔴 LIVE</div>
+      </div>
+    </div>
+
+    <!-- LIVE WEBCAMS Column -->
+    <div class="dash-col webcams">
+      <div class="dh">LIVE WEBCAMS <span class="dcount" id="webcam-count">● 4</span></div>
+      <div class="sub-tabs">
+        <button class="stb on" onclick="setWebcamRegion('hotspots')">HOTSPOTS</button>
+        <button class="stb" onclick="setWebcamRegion('europe')">EUROPE</button>
+        <button class="stb" onclick="setWebcamRegion('americas')">AMERICAS</button>
+        <button class="stb" onclick="setWebcamRegion('asia')">ASIA</button>
+        <button class="stb" onclick="setWebcamRegion('space')">SPACE</button>
+      </div>
+      <div class="vid-grid" id="webcam-grid">
+        <div>
+          <div class="vid-label">📍 AL JAZEERA LIVE</div>
+          <iframe src="https://www.youtube.com/embed/live_stream?channel=UCNye-wNBqNL5ZzHSJj3l8Bg&autoplay=1&mute=1"
+            allow="autoplay;encrypted-media" loading="lazy"></iframe>
+        </div>
+        <div>
+          <div class="vid-label">📍 SKY NEWS LIVE</div>
+          <iframe src="https://www.youtube.com/embed/live_stream?channel=UCoMdktPbSTixAyNGwb-UYkQ&autoplay=1&mute=1"
+            allow="autoplay;encrypted-media" loading="lazy"></iframe>
+        </div>
+        <div>
+          <div class="vid-label">📍 FRANCE 24 LIVE</div>
+          <iframe src="https://www.youtube.com/embed/live_stream?channel=UCQfwfsi5VrQ8yKZ-UWmAEFg&autoplay=1&mute=1"
+            allow="autoplay;encrypted-media" loading="lazy"></iframe>
+        </div>
+        <div>
+          <div class="vid-label">📍 DW NEWS LIVE</div>
+          <iframe src="https://www.youtube.com/embed/live_stream?channel=UCknLrEdhRCp1aegoMqRaCZg&autoplay=1&mute=1"
+            allow="autoplay;encrypted-media" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI INSIGHTS Column -->
+    <div class="dash-col ai">
+      <div class="dh">AI INSIGHTS <span
+          style="background:#ff3333;color:#fff;padding:1px 6px;border-radius:3px;font-size:8px">LIVE</span></div>
+      <div style="flex:1;overflow-y:auto;padding:8px" id="ai-insights-feed">
+        <div style="margin-bottom:12px">
+          <div style="font-size:9px;color:var(--orange);text-transform:uppercase;margin-bottom:4px">▲ WORLD BRIEF</div>
+          <div style="font-size:10px;color:var(--text);line-height:1.5" id="ai-brief">Loading world brief from OSINT
+            feeds...</div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:8px">
+          <div style="font-size:9px;color:var(--accent);text-transform:uppercase;margin-bottom:7px">AI STRATEGIC POSTURE
+          </div>
+          <div id="ai-posture-list" style="font-size:10px;line-height:1.8;color:var(--dim)">Analyzing global threat
+            landscape...</div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:8px">
+          <div style="font-size:9px;color:var(--red);text-transform:uppercase;margin-bottom:7px">LIVE INTELLIGENCE</div>
+          <div id="ai-live-intel" style="font-size:10px;line-height:1.6;color:var(--dim)">Monitoring feeds...</div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:12px">
+          <div style="font-size:9px;color:var(--yellow);text-transform:uppercase;margin-bottom:7px">COUNTRY INSTABILITY
+            INDEX</div>
+          <div id="ai-instability" style="font-size:10px;line-height:1.6;color:var(--dim)">
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>Ukraine</span><span
+                style="color:#ff3333">92 — CRITICAL</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>Israel</span><span
+                style="color:#ff3333">89 — CRITICAL</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>Sudan</span><span
+                style="color:#ff8800">78 — HIGH</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>Myanmar</span><span
+                style="color:#ff8800">72 — HIGH</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>Yemen</span><span
+                style="color:#ff8800">68 — HIGH</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px"><span>Taiwan Strait</span><span
+                style="color:#ffcc00">55 — ELEVATED</span></div>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:12px">
+          <div style="font-size:9px;color:var(--green);text-transform:uppercase;margin-bottom:7px">STRATEGIC RISK
+            OVERVIEW</div>
+          <div style="font-size:10px;color:var(--dim)">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+              <div
+                style="width:40px;height:40px;border-radius:50%;border:3px solid var(--orange);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--orange)">
+                51</div>
+              <div>
+                <div style="color:var(--orange);font-weight:700">ELEVATED</div>
+                <div style="font-size:9px">Trend: → Stable</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:12px">
+          <div style="font-size:9px;color:#aa44ff;text-transform:uppercase;margin-bottom:7px">REGIONAL HOTSPOTS</div>
+          <div id="ai-regions" style="font-size:10px;color:var(--dim);line-height:1.6">
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>Eastern
+                Mediterranean</span><span
+                style="background:rgba(255,51,51,0.2);color:#ff3333;padding:1px 4px;border-radius:2px;font-size:8px">CRIT</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>Red Sea/Gulf of
+                Aden</span><span
+                style="background:rgba(255,51,51,0.2);color:#ff3333;padding:1px 4px;border-radius:2px;font-size:8px">CRIT</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>South China Sea</span><span
+                style="background:rgba(255,136,0,0.2);color:#ff8800;padding:1px 4px;border-radius:2px;font-size:8px">HIGH</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>Baltic Sea</span><span
+                style="background:rgba(255,136,0,0.2);color:#ff8800;padding:1px 4px;border-radius:2px;font-size:8px">HIGH</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>Horn of Africa</span><span
+                style="background:rgba(255,136,0,0.2);color:#ff8800;padding:1px 4px;border-radius:2px;font-size:8px">HIGH</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>Korean Peninsula</span><span
+                style="background:rgba(255,204,0,0.2);color:#ffcc00;padding:1px 4px;border-radius:2px;font-size:8px">ELEV</span>
+            </div>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:8px;margin-top:12px">
+          <div style="font-size:9px;color:var(--accent);text-transform:uppercase;margin-bottom:7px">INFRASTRUCTURE
+            CASCADE</div>
+          <div style="font-size:10px;color:var(--dim);line-height:1.6">
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>🛢 Undersea
+                Cables</span><span id="infra-cables">—</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>🛢 Pipelines</span><span
+                id="infra-pipes">—</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>⚓ Ports</span><span
+                id="infra-ports">—</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:3px"><span>🔒 Chokepoints</span><span
+                id="infra-choke">—</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COUNTRY INTELLIGENCE PANEL -->
+  <div id="country-panel">
+    <div class="cp-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="cp-flag" id="cp-flag">🌐</span>
+          <div>
+            <div class="cp-name" id="cp-name">—</div>
+            <div class="cp-sub" id="cp-sub">Country Intelligence</div>
+          </div>
+        </div>
+      </div>
+      <button onclick="closeCountryPanel()"
+        style="background:none;border:1px solid var(--border);color:var(--dim);cursor:pointer;padding:4px 8px;border-radius:4px;font-size:14px">✕</button>
+    </div>
+
+    <div class="cp-box">
+      <div class="cp-box-title">Instability Index <span style="float:right;font-size:9px;color:var(--dim)"
+          id="cp-updated">—</span></div>
+      <div class="cp-score-row">
+        <div class="cp-score" id="cp-score">—<span class="max">/100</span></div>
+        <span style="color:var(--dim);font-size:11px" id="cp-trend">→ stable</span>
+      </div>
+      <div class="cp-metric"><span>🔥 Unrest</span>
+        <div class="cp-bar-bg">
+          <div class="cp-bar-fg" id="cp-unrest" style="width:0%"></div>
+        </div><span id="cp-unrest-val">0</span>
+      </div>
+      <div class="cp-metric"><span>⚔ Conflict</span>
+        <div class="cp-bar-bg">
+          <div class="cp-bar-fg" id="cp-conflict" style="width:0%;background:var(--red)"></div>
+        </div><span id="cp-conflict-val">0</span>
+      </div>
+      <div class="cp-metric"><span>🛡 Security</span>
+        <div class="cp-bar-bg">
+          <div class="cp-bar-fg" id="cp-security" style="width:0%"></div>
+        </div><span id="cp-security-val">0</span>
+      </div>
+      <div class="cp-metric"><span>📡 Information</span>
+        <div class="cp-bar-bg">
+          <div class="cp-bar-fg" id="cp-info" style="width:0%;background:var(--accent)"></div>
+        </div><span id="cp-info-val">0</span>
+      </div>
+    </div>
+
+    <div class="cp-box">
+      <div class="cp-box-title">Active Signals</div>
+      <div id="cp-signals" style="display:flex;flex-wrap:wrap;gap:5px">—</div>
+    </div>
+
+    <div class="cp-box">
+      <div class="cp-box-title">Military Activity</div>
+      <div id="cp-military" style="font-size:10px;color:var(--dim);line-height:1.7">Calculating...</div>
+    </div>
+
+    <div class="cp-box">
+      <div class="cp-box-title">Top News</div>
+      <div id="cp-news" style="font-size:10px;color:var(--dim);line-height:1.6">Fetching...</div>
+    </div>
+
+    <div class="cp-box">
+      <div class="cp-box-title">Economic Indicators</div>
+      <div id="cp-econ" style="font-size:10px;color:var(--dim);line-height:1.7">Loading...</div>
+    </div>
+  </div>
+
+  <!-- DASH TOGGLE BUTTON -->
+  <div style="position:fixed;bottom:4px;left:50%;transform:translateX(-50%);z-index:100">
+    <button onclick="toggleDashPanel()" id="dash-toggle-btn"
+      style="background:rgba(6,8,16,.95);border:1px solid var(--border);color:var(--accent);padding:4px 14px;border-radius:4px 4px 0 0;cursor:pointer;font-size:9px;font-family:inherit;font-weight:700;letter-spacing:1px">▲
+      LIVE DASHBOARD</button>
+  </div>
+
+  <div id="cesiumContainer"></div>
+  <div id="statusbar">
+    <span id="sb-mode">
+      <div class="sdot dg"></div>3D Globe
+    </span>
+    <span id="sb-bases">Bases: -</span>
+    <span id="sb-wars">Wars: -</span>
+    <span id="sb-region">India</span>
+    <span style="margin-left:auto" id="sb-fps">--fps</span>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

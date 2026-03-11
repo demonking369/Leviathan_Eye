@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "type": "bri_routes",
+  "last_updated": "2026-03-08T17:38:22Z",
+  "data": [
+    {
+      "name": "Maritime Silk Road Core",
+      "type": "maritime_bri",
+      "color": "#ff6644",
+      "coords": [
+        [
+          22,
+          114
+        ],
+        [
+          10,
+          107
+        ],
+        [
+          5,
+          103
+        ],
+        [
+          1.3,
+          103.8
+        ],
+        [
+          5,
+          80
+        ],
+        [
+          12,
+          50
+        ],
+        [
+          12,
+          43
+        ],
+        [
+          11.6,
+          43.1
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          37,
+          14
+        ],
+        [
+          38,
+          5
+        ],
+        [
+          43,
+          -3
+        ],
+        [
+          52,
+          5
+        ]
+      ],
+      "description": "Primary maritime BRI. China to Europe via Malacca, Indian Ocean, Suez. 60% world trade route.",
+      "ports": [
+        "Shanghai",
+        "Singapore",
+        "Colombo",
+        "Gwadar",
+        "Djibouti",
+        "Piraeus"
+      ]
+    },
+    {
+      "name": "Maritime Silk Road Africa",
+      "type": "maritime_bri",
+      "color": "#ff6644",
+      "coords": [
+        [
+          1.3,
+          103.8
+        ],
+        [
+          -4,
+          40
+        ],
+        [
+          -11,
+          35
+        ],
+        [
+          -26,
+          28
+        ],
+        [
+          -34,
+          18
+        ]
+      ],
+      "description": "East Africa branch. Chinese port investments: Mombasa, Dar es Salaam, Maputo."
+    },
+    {
+      "name": "CPEC China-Pakistan Economic Corridor",
+      "type": "land_bri",
+      "color": "#ff2200",
+      "coords": [
+        [
+          39,
+          76
+        ],
+        [
+          36,
+          74
+        ],
+        [
+          34,
+          72
+        ],
+        [
+          30,
+          68
+        ],
+        [
+          27,
+          66
+        ],
+        [
+          25.1,
+          62.3
+        ]
+      ],
+      "description": "Strategic $62B corridor. Xinjiang to Gwadar deep-sea port. Potential military logistics route. Heavily guarded by Pakistan Army."
+    },
+    {
+      "name": "New Eurasian Land Bridge",
+      "type": "land_bri",
+      "color": "#ff4400",
+      "coords": [
+        [
+          30,
+          121
+        ],
+        [
+          34,
+          108
+        ],
+        [
+          36,
+          103
+        ],
+        [
+          39,
+          89
+        ],
+        [
+          43,
+          77
+        ],
+        [
+          42,
+          70
+        ],
+        [
+          41,
+          69
+        ],
+        [
+          52,
+          72
+        ],
+        [
+          54,
+          73
+        ],
+        [
+          52,
+          104
+        ],
+        [
+          53,
+          126
+        ],
+        [
+          52,
+          156
+        ]
+      ],
+      "description": "Trans-Eurasian rail. China to Germany via Central Asia. China-Europe freight trains."
+    },
+    {
+      "name": "China-Myanmar Economic Corridor",
+      "type": "land_bri",
+      "color": "#ff4400",
+      "coords": [
+        [
+          24,
+          100
+        ],
+        [
+          22,
+          97
+        ],
+        [
+          20,
+          96
+        ],
+        [
+          17,
+          96
+        ],
+        [
+          16.8,
+          96.2
+        ]
+      ],
+      "description": "Yunnan to Kyaukpyu port. Bypasses Malacca for energy imports. Pipeline + road."
+    },
+    {
+      "name": "China-Laos-Thailand Railway",
+      "type": "land_bri",
+      "color": "#ff4400",
+      "coords": [
+        [
+          22,
+          103
+        ],
+        [
+          20,
+          102
+        ],
+        [
+          18,
+          103
+        ],
+        [
+          16,
+          103
+        ],
+        [
+          14,
+          101
+        ],
+        [
+          13.7,
+          100.5
+        ]
+      ],
+      "description": "High-speed rail Kunming to Bangkok. Extension planned Singapore."
+    },
+    {
+      "name": "China-Central Asia-West Asia",
+      "type": "land_bri",
+      "color": "#ff4400",
+      "coords": [
+        [
+          39,
+          89
+        ],
+        [
+          38,
+          63
+        ],
+        [
+          37,
+          58
+        ],
+        [
+          35,
+          51
+        ],
+        [
+          33,
+          44
+        ],
+        [
+          33,
+          36
+        ]
+      ],
+      "description": "Through Kazakhstan, Turkmenistan, Iran to Turkey. Energy corridor."
+    },
+    {
+      "name": "Digital Silk Road PEACE Cable",
+      "type": "cable_bri",
+      "color": "#aa22ff",
+      "coords": [
+        [
+          22,
+          121
+        ],
+        [
+          8,
+          108
+        ],
+        [
+          -6,
+          105
+        ],
+        [
+          -20,
+          60
+        ],
+        [
+          25,
+          55
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          36,
+          14
+        ],
+        [
+          38,
+          5
+        ],
+        [
+          48,
+          2
+        ]
+      ],
+      "description": "Chinese-funded PEACE undersea cable. HMN Tech (formerly Huawei Marine). Pakistan, Kenya, France landing points."
+    },
+    {
+      "name": "Arctic Silk Road",
+      "type": "arctic_bri",
+      "color": "#00aaff",
+      "coords": [
+        [
+          22,
+          121
+        ],
+        [
+          35,
+          139
+        ],
+        [
+          55,
+          170
+        ],
+        [
+          70,
+          160
+        ],
+        [
+          71,
+          -10
+        ],
+        [
+          65,
+          -14
+        ],
+        [
+          60,
+          -5
+        ],
+        [
+          52,
+          5
+        ]
+      ],
+      "description": "Northern Sea Route. China-Russia strategic partnership. Opening due to Arctic ice melt."
+    }
+  ]
+}

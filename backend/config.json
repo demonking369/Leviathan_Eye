@@ -1,0 +1,8 @@
+{
+  "mode": "ollama",
+  "key": "",
+  "url": "",
+  "model": "",
+  "ollama_model": "llama3:latest",
+  "tool_mode": "text"
+}

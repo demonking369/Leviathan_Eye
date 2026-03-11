@@ -1,0 +1,4612 @@
+[
+  {
+    "id": "in_af_agra",
+    "name": "Agra Air Force Station",
+    "lat": 27.158,
+    "lon": 77.961,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Transport hub, C-17 Globemaster III, C-130J",
+    "details": {
+      "role": "Strategic airlift",
+      "aircraft": [
+        "C-17",
+        "C-130J",
+        "An-32"
+      ],
+      "established": "1947",
+      "runways": "1 \u00d7 2,900m"
+    }
+  },
+  {
+    "id": "in_af_ambala",
+    "name": "Ambala Air Force Station",
+    "lat": 30.38,
+    "lon": 76.822,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "No.17 Golden Arrows Sqn, Rafale fighters",
+    "details": {
+      "role": "Strike",
+      "aircraft": [
+        "Rafale",
+        "Jaguar"
+      ],
+      "established": "1948",
+      "runways": "1 \u00d7 2,800m",
+      "notable": "First Rafale base in India"
+    }
+  },
+  {
+    "id": "in_af_awantipur",
+    "name": "Awantipur Air Force Station",
+    "lat": 33.775,
+    "lon": 75.02,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Kashmir Valley forward base",
+    "details": {
+      "role": "Air defense, CAS",
+      "aircraft": [
+        "MiG-21",
+        "Mi-17"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_bagdogra",
+    "name": "Bagdogra Air Force Station",
+    "lat": 26.681,
+    "lon": 88.323,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Siliguri Corridor, northeast gateway",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "Su-30MKI"
+      ],
+      "runways": "1 \u00d7 2,700m",
+      "notable": "Guards Chicken's Neck corridor"
+    }
+  },
+  {
+    "id": "in_af_bareilly",
+    "name": "Bareilly Air Force Station",
+    "lat": 28.422,
+    "lon": 79.451,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Jaguar maritime strike",
+    "details": {
+      "role": "Maritime strike",
+      "aircraft": [
+        "Jaguar IM"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_bhuj",
+    "name": "Bhuj Air Force Station",
+    "lat": 23.288,
+    "lon": 69.67,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Gujarat, Pakistan border air defense",
+    "details": {
+      "role": "Forward air defense",
+      "runways": "1 \u00d7 2,500m",
+      "notable": "Key role in 1971 war"
+    }
+  },
+  {
+    "id": "in_af_bidar",
+    "name": "Bidar Air Force Station",
+    "lat": 17.908,
+    "lon": 77.488,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Training base, Karnataka",
+    "details": {
+      "role": "Operational Training Unit",
+      "aircraft": [
+        "Kiran",
+        "Hawk"
+      ],
+      "runways": "1 \u00d7 2,400m"
+    }
+  },
+  {
+    "id": "in_af_nal",
+    "name": "NAL Air Force Station (Bikaner)",
+    "lat": 28.071,
+    "lon": 73.208,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Rajasthan desert forward base",
+    "details": {
+      "role": "Forward strike",
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_carnicobar",
+    "name": "INS Baaz / Car Nicobar AFS",
+    "lat": 9.153,
+    "lon": 92.822,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF/Navy",
+    "status": "active",
+    "desc": "Andaman & Nicobar, Malacca Strait watch",
+    "details": {
+      "role": "Maritime patrol, forward air",
+      "runways": "1 \u00d7 3,000m",
+      "notable": "Southernmost IAF base"
+    }
+  },
+  {
+    "id": "in_af_chabua",
+    "name": "Chabua Air Force Station",
+    "lat": 27.478,
+    "lon": 95.113,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Assam, northeast operations",
+    "details": {
+      "role": "Transport, helicopter ops",
+      "aircraft": [
+        "Mi-17",
+        "Dhruv"
+      ],
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_chandigarh",
+    "name": "Chandigarh Air Force Station",
+    "lat": 30.674,
+    "lon": 76.789,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Western Air Command base",
+    "details": {
+      "role": "Fighter ops",
+      "aircraft": [
+        "MiG-21"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_coimbatore",
+    "name": "Sulur Air Force Station",
+    "lat": 11.03,
+    "lon": 77.043,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Tamil Nadu, Su-30MKI",
+    "details": {
+      "role": "Air superiority",
+      "aircraft": [
+        "Su-30MKI",
+        "LCA Tejas"
+      ],
+      "runways": "1 \u00d7 2,700m",
+      "notable": "First LCA Tejas operational base"
+    }
+  },
+  {
+    "id": "in_af_dbo",
+    "name": "Daulat Beg Oldie ALG",
+    "lat": 35.376,
+    "lon": 77.686,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "World's highest airstrip at 5,065m",
+    "details": {
+      "role": "Forward logistics, LAC patrol",
+      "runways": "1 \u00d7 short",
+      "notable": "World's highest landing strip"
+    }
+  },
+  {
+    "id": "in_af_dundigal",
+    "name": "Air Force Academy Dundigal",
+    "lat": 17.612,
+    "lon": 78.102,
+    "country": "India",
+    "cc": "IN",
+    "type": "training",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "IAF officer training academy",
+    "details": {
+      "role": "Training",
+      "aircraft": [
+        "PC-7 Mk II",
+        "Pilatus",
+        "Hawk"
+      ],
+      "runways": "2 \u00d7 2,400m"
+    }
+  },
+  {
+    "id": "in_af_gorakhpur",
+    "name": "Gorakhpur Air Force Station",
+    "lat": 26.741,
+    "lon": 83.449,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "UP, eastern operations",
+    "details": {
+      "role": "Fighter ops",
+      "aircraft": [
+        "Su-30MKI"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_gwalior",
+    "name": "Gwalior Air Force Station",
+    "lat": 26.292,
+    "lon": 78.227,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Mirage 2000, nuclear-capable",
+    "details": {
+      "role": "Nuclear strike",
+      "aircraft": [
+        "Mirage 2000H",
+        "MiG-21"
+      ],
+      "runways": "1 \u00d7 2,800m",
+      "notable": "Nuclear delivery capable"
+    }
+  },
+  {
+    "id": "in_af_halwara",
+    "name": "Halwara Air Force Station",
+    "lat": 30.732,
+    "lon": 75.639,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Punjab, Rafale forward base",
+    "details": {
+      "role": "Strike",
+      "aircraft": [
+        "Rafale",
+        "MiG-29"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_hashimara",
+    "name": "Hashimara Air Force Station",
+    "lat": 26.715,
+    "lon": 89.378,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "West Bengal, Bhutan/China border",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "Su-30MKI"
+      ],
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_hindon",
+    "name": "Hindon Air Force Station",
+    "lat": 28.709,
+    "lon": 77.43,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "NCR region, transport hub",
+    "details": {
+      "role": "Strategic transport",
+      "aircraft": [
+        "C-17",
+        "C-130J",
+        "Il-76",
+        "An-32"
+      ],
+      "runways": "1 \u00d7 2,800m",
+      "notable": "Largest IAF base by aircraft"
+    }
+  },
+  {
+    "id": "in_af_jaisalmer",
+    "name": "Jaisalmer Air Force Station",
+    "lat": 26.909,
+    "lon": 70.865,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Rajasthan desert, Pakistan border",
+    "details": {
+      "role": "Forward fighter ops",
+      "runways": "1 \u00d7 2,500m",
+      "notable": "Near Pokhran test range"
+    }
+  },
+  {
+    "id": "in_af_jamnagar",
+    "name": "Jamnagar Air Force Station",
+    "lat": 22.461,
+    "lon": 70.012,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Gujarat coast",
+    "details": {
+      "role": "Maritime patrol",
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_jodhpur",
+    "name": "Jodhpur Air Force Station",
+    "lat": 26.251,
+    "lon": 72.949,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Rajasthan, Pakistan border ops",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "Su-30MKI",
+        "MiG-21"
+      ],
+      "runways": "1 \u00d7 2,800m"
+    }
+  },
+  {
+    "id": "in_af_jorhat",
+    "name": "Jorhat Air Force Station",
+    "lat": 26.732,
+    "lon": 94.176,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Assam, northeast India",
+    "details": {
+      "role": "Transport, helicopter",
+      "aircraft": [
+        "Mi-17",
+        "Dhruv",
+        "Chinook"
+      ],
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_kalaikunda",
+    "name": "Kalaikunda Air Force Station",
+    "lat": 22.326,
+    "lon": 87.203,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "West Bengal, maritime ops",
+    "details": {
+      "role": "Maritime strike",
+      "aircraft": [
+        "Jaguar"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_leh",
+    "name": "Leh Kushok Bakula Air Base",
+    "lat": 34.136,
+    "lon": 77.547,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Ladakh, world's highest air base at 3,256m",
+    "details": {
+      "role": "Forward air defense, China LAC",
+      "aircraft": [
+        "C-130J",
+        "An-32",
+        "MiG-29"
+      ],
+      "runways": "1 \u00d7 2,700m",
+      "notable": "Highest operational air base"
+    }
+  },
+  {
+    "id": "in_af_naliya",
+    "name": "Naliya Air Force Station",
+    "lat": 23.22,
+    "lon": 68.832,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Gujarat, Kutch border region",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "Su-30MKI"
+      ],
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_pathankot",
+    "name": "Pathankot Air Force Station",
+    "lat": 32.234,
+    "lon": 75.635,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Punjab, frontline base",
+    "details": {
+      "role": "Strike",
+      "aircraft": [
+        "MiG-21",
+        "Jaguar"
+      ],
+      "runways": "1 \u00d7 2,700m",
+      "notable": "Terror attack Jan 2016"
+    }
+  },
+  {
+    "id": "in_af_pune",
+    "name": "Lohegaon Air Force Station (Pune)",
+    "lat": 18.582,
+    "lon": 73.92,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Maharashtra, MiG-29 fighters",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "MiG-29"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_srinagar",
+    "name": "Srinagar Air Force Station",
+    "lat": 34.005,
+    "lon": 74.774,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "J&K, forward operations",
+    "details": {
+      "role": "CAS, air defense",
+      "aircraft": [
+        "MiG-21",
+        "Mi-17"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_tezpur",
+    "name": "Tezpur Air Force Station",
+    "lat": 26.709,
+    "lon": 92.784,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Assam, near China border",
+    "details": {
+      "role": "Air superiority",
+      "aircraft": [
+        "Su-30MKI"
+      ],
+      "runways": "1 \u00d7 2,700m",
+      "notable": "Key China border defense"
+    }
+  },
+  {
+    "id": "in_af_thanjavur",
+    "name": "Thanjavur Air Force Station",
+    "lat": 10.722,
+    "lon": 79.101,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Tamil Nadu, Su-30MKI maritime",
+    "details": {
+      "role": "Maritime strike",
+      "aircraft": [
+        "Su-30MKI (BrahMos)"
+      ],
+      "runways": "1 \u00d7 2,700m",
+      "notable": "BrahMos equipped Su-30s"
+    }
+  },
+  {
+    "id": "in_af_uttarlai",
+    "name": "Uttarlai Air Force Station",
+    "lat": 25.69,
+    "lon": 71.79,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Rajasthan, Pakistan border",
+    "details": {
+      "role": "Forward ops",
+      "runways": "1 \u00d7 2,500m"
+    }
+  },
+  {
+    "id": "in_af_yelahanka",
+    "name": "Yelahanka Air Force Station",
+    "lat": 13.135,
+    "lon": 77.6,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Bengaluru, Aero India venue",
+    "details": {
+      "role": "Training, airshow",
+      "runways": "1 \u00d7 2,500m",
+      "notable": "Aero India biennial airshow"
+    }
+  },
+  {
+    "id": "in_af_tambaram",
+    "name": "Tambaram Air Force Station",
+    "lat": 12.92,
+    "lon": 80.11,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Chennai suburb, helicopter ops",
+    "details": {
+      "role": "Helicopter training",
+      "aircraft": [
+        "Mi-8",
+        "Dhruv"
+      ],
+      "runways": "1 \u00d7 2,400m"
+    }
+  },
+  {
+    "id": "in_af_begumpet",
+    "name": "Begumpet Air Force Station",
+    "lat": 17.45,
+    "lon": 78.47,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Hyderabad, communication hub",
+    "details": {
+      "role": "Signals, communication",
+      "runways": "1 \u00d7 2,400m"
+    }
+  },
+  {
+    "id": "in_af_suratgarh",
+    "name": "Suratgarh Air Force Station",
+    "lat": 29.33,
+    "lon": 73.85,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Rajasthan, Pakistan border",
+    "details": {
+      "role": "Fighter ops",
+      "aircraft": [
+        "Su-30MKI"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_palam",
+    "name": "Palam Air Force Station (Delhi)",
+    "lat": 28.56,
+    "lon": 77.09,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Delhi, WAC HQ",
+    "details": {
+      "role": "Western Air Command HQ",
+      "aircraft": [
+        "Boeing 737",
+        "Embraer"
+      ],
+      "runways": "Shared with IGI Airport"
+    }
+  },
+  {
+    "id": "in_af_thoise",
+    "name": "Thoise Air Force Station",
+    "lat": 34.63,
+    "lon": 77.32,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Siachen operations, highest ALG",
+    "details": {
+      "role": "Siachen glacier logistics",
+      "aircraft": [
+        "An-32",
+        "Dhruv"
+      ],
+      "runways": "1 \u00d7 short ALG",
+      "notable": "Northernmost IAF base"
+    }
+  },
+  {
+    "id": "in_af_hasimara_tejas",
+    "name": "Hasimara No.18 Sqn (LCA Tejas)",
+    "lat": 26.698,
+    "lon": 89.35,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Second LCA Tejas squadron base",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "LCA Tejas Mk1"
+      ],
+      "notable": "Flying Bullets squadron"
+    }
+  },
+  {
+    "id": "in_af_pune_wac",
+    "name": "Maintenance Command HQ (Nagpur)",
+    "lat": 21.092,
+    "lon": 79.047,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "IAF Maintenance Command",
+    "details": {
+      "role": "Aircraft maintenance, overhaul"
+    }
+  },
+  {
+    "id": "in_af_tughlakabad",
+    "name": "Tughlakabad AFS (Delhi)",
+    "lat": 28.503,
+    "lon": 77.251,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Delhi area support base",
+    "details": {
+      "role": "Communications, logistics"
+    }
+  },
+  {
+    "id": "in_af_ojhar",
+    "name": "Ojhar Air Force Station (Nasik)",
+    "lat": 20.12,
+    "lon": 73.9,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "HAL MiG-29K overhaul facility",
+    "details": {
+      "role": "Overhaul and repair",
+      "aircraft": [
+        "MiG-29K"
+      ],
+      "notable": "HAL overhaul division"
+    }
+  },
+  {
+    "id": "in_af_arjan_singh",
+    "name": "AFS Panagarh (Arjan Singh)",
+    "lat": 23.473,
+    "lon": 87.427,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "West Bengal, Eastern Air Command",
+    "details": {
+      "role": "Fighter, transport",
+      "aircraft": [
+        "C-130J",
+        "Chinook"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_jamnagar2",
+    "name": "Jamnagar Naval Air Station",
+    "lat": 22.469,
+    "lon": 70.014,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Naval aviation training",
+    "details": {
+      "role": "Naval pilot training"
+    }
+  },
+  {
+    "id": "in_af_sirsa",
+    "name": "Sirsa Air Force Station",
+    "lat": 29.561,
+    "lon": 75.013,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Haryana, MiG-21 base",
+    "details": {
+      "role": "Fighter ops",
+      "aircraft": [
+        "MiG-21"
+      ]
+    }
+  },
+  {
+    "id": "in_af_adampur",
+    "name": "Adampur Air Force Station",
+    "lat": 31.433,
+    "lon": 75.759,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Punjab, frontline fighter base",
+    "details": {
+      "role": "Air defense",
+      "aircraft": [
+        "Su-30MKI",
+        "Jaguar"
+      ],
+      "runways": "1 \u00d7 2,700m"
+    }
+  },
+  {
+    "id": "in_af_maharajpur",
+    "name": "Maharajpur AFS (Gwalior)",
+    "lat": 26.282,
+    "lon": 78.225,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Central India, Mirage 2000 wing",
+    "details": {
+      "role": "Strike wing"
+    }
+  },
+  {
+    "id": "in_af_allahabad",
+    "name": "Bamrauli Air Force Station",
+    "lat": 25.44,
+    "lon": 81.734,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "UP, training base",
+    "details": {
+      "role": "Training",
+      "runways": "1 \u00d7 2,400m"
+    }
+  },
+  {
+    "id": "in_af_hakimpet",
+    "name": "Hakimpet Air Force Station",
+    "lat": 17.543,
+    "lon": 78.5,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Hyderabad, helicopter training",
+    "details": {
+      "role": "Helicopter training",
+      "aircraft": [
+        "Chetak",
+        "Dhruv",
+        "Chinook"
+      ]
+    }
+  },
+  {
+    "id": "in_af_kalburgi",
+    "name": "Kalaburagi Air Force Station",
+    "lat": 17.418,
+    "lon": 76.812,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Karnataka, under expansion",
+    "details": {
+      "role": "Forward base",
+      "status": "expansion"
+    }
+  },
+  {
+    "id": "in_af_bhatinda",
+    "name": "Bhatinda Air Force Station",
+    "lat": 30.201,
+    "lon": 74.958,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Punjab, Pakistan border",
+    "details": {
+      "role": "Forward fighter ops"
+    }
+  },
+  {
+    "id": "in_af_sarsawa",
+    "name": "Sarsawa Air Force Station",
+    "lat": 29.993,
+    "lon": 77.434,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "UP, helicopter base",
+    "details": {
+      "role": "Helicopter ops",
+      "aircraft": [
+        "Mi-25",
+        "Mi-35",
+        "Apache AH-64E"
+      ],
+      "notable": "Attack helicopter wing"
+    }
+  },
+  {
+    "id": "in_af_tezgaon",
+    "name": "Tezpur FW Station (No.8 Sqn)",
+    "lat": 26.717,
+    "lon": 92.785,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Su-30MKI Purba Fighters",
+    "details": {
+      "role": "Air superiority",
+      "aircraft": [
+        "Su-30MKI"
+      ]
+    }
+  },
+  {
+    "id": "in_af_chettinad",
+    "name": "Chettinad AFS (Sivaganga)",
+    "lat": 10.15,
+    "lon": 78.8,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Tamil Nadu fighter base",
+    "details": {
+      "role": "Fighter ops"
+    }
+  },
+  {
+    "id": "in_af_solomon",
+    "name": "Kalikunda (No.2 Sqn)",
+    "lat": 22.34,
+    "lon": 87.21,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Jaguar maritime wing",
+    "details": {
+      "role": "Maritime strike",
+      "aircraft": [
+        "Jaguar"
+      ]
+    }
+  },
+  {
+    "id": "in_af_sukhna",
+    "name": "Air Force Station Sukhna",
+    "lat": 30.84,
+    "lon": 76.87,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Near Chandigarh, logistics",
+    "details": {
+      "role": "Logistics hub"
+    }
+  },
+  {
+    "id": "in_af_challakere",
+    "name": "Challakere Military Complex",
+    "lat": 14.32,
+    "lon": 76.65,
+    "country": "India",
+    "cc": "IN",
+    "type": "research",
+    "arm": "DRDO/DAE",
+    "status": "construction",
+    "desc": "Nuclear/defense research, under construction",
+    "details": {
+      "role": "Nuclear research, missile testing",
+      "notable": "INS Arihant missile testing suspected"
+    }
+  },
+  {
+    "id": "in_af_fukche",
+    "name": "Fukche Advanced Landing Ground",
+    "lat": 32.95,
+    "lon": 79.07,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Ladakh forward ALG",
+    "details": {
+      "role": "Forward logistics, patrol",
+      "runways": "1 \u00d7 short ALG"
+    }
+  },
+  {
+    "id": "in_af_nyoma",
+    "name": "Nyoma Advanced Landing Ground",
+    "lat": 33.047,
+    "lon": 77.971,
+    "country": "India",
+    "cc": "IN",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Ladakh, near China LAC",
+    "details": {
+      "role": "Forward fighter ops",
+      "notable": "Being upgraded for fighter aircraft"
+    }
+  },
+  {
+    "id": "in_nv_vizag",
+    "name": "INS Visakhapatnam (ENC HQ)",
+    "lat": 17.723,
+    "lon": 83.232,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Eastern Naval Command HQ, submarine base",
+    "details": {
+      "role": "Fleet HQ, submarine ops",
+      "ships": [
+        "Scorpene SSK",
+        "Sindhughosh SSK"
+      ],
+      "notable": "Nuclear submarine base"
+    }
+  },
+  {
+    "id": "in_nv_mumbai",
+    "name": "INS Shikra (WNC Mumbai)",
+    "lat": 18.899,
+    "lon": 72.84,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Western Naval Command HQ",
+    "details": {
+      "role": "Fleet HQ",
+      "ships": [
+        "INS Vikrant",
+        "Kolkata-class DDG"
+      ],
+      "notable": "INS Vikrant homeport"
+    }
+  },
+  {
+    "id": "in_nv_kochi",
+    "name": "INS Venduruthy (SNC Kochi)",
+    "lat": 9.966,
+    "lon": 76.267,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Southern Naval Command HQ",
+    "details": {
+      "role": "Training, fleet ops",
+      "ships": [
+        "P-8I Poseidon"
+      ],
+      "notable": "P-8I ASW base"
+    }
+  },
+  {
+    "id": "in_nv_karwar",
+    "name": "INS Kadamba (Karwar)",
+    "lat": 14.814,
+    "lon": 74.133,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "construction",
+    "desc": "Project Seabird Phase II, expanding",
+    "details": {
+      "role": "Major naval base",
+      "notable": "Will be India's largest base, carrier + SSN port",
+      "area_sq_km": 45
+    }
+  },
+  {
+    "id": "in_nv_andaman",
+    "name": "INS Jarawa (Port Blair)",
+    "lat": 11.623,
+    "lon": 92.727,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Andaman & Nicobar Command",
+    "details": {
+      "role": "Tri-service command",
+      "notable": "India's only tri-service command"
+    }
+  },
+  {
+    "id": "in_nv_campbell",
+    "name": "INS Baaz (Campbell Bay)",
+    "lat": 7.021,
+    "lon": 93.919,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Southernmost Indian naval station",
+    "details": {
+      "role": "Maritime surveillance",
+      "notable": "Near Malacca Strait"
+    }
+  },
+  {
+    "id": "in_nv_goa",
+    "name": "INS Hansa (Goa)",
+    "lat": 15.383,
+    "lon": 73.83,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Naval aviation hub, MiG-29K",
+    "details": {
+      "role": "Naval aviation",
+      "aircraft": [
+        "MiG-29K",
+        "Kamov Ka-31"
+      ],
+      "notable": "Naval air station"
+    }
+  },
+  {
+    "id": "in_nv_arakkonam",
+    "name": "INS Rajali (Arakkonam)",
+    "lat": 13.074,
+    "lon": 79.662,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Naval air station, P-8I Poseidon",
+    "details": {
+      "role": "Maritime patrol",
+      "aircraft": [
+        "P-8I",
+        "Dornier Do-228"
+      ]
+    }
+  },
+  {
+    "id": "in_nv_dweep",
+    "name": "INS Dweeprakshak (Lakshadweep)",
+    "lat": 10.573,
+    "lon": 72.638,
+    "country": "India",
+    "cc": "IN",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Lakshadweep naval detachment",
+    "details": {
+      "role": "Island defense"
+    }
+  },
+  {
+    "id": "in_nv_chilka",
+    "name": "INS Chilka",
+    "lat": 19.721,
+    "lon": 85.092,
+    "country": "India",
+    "cc": "IN",
+    "type": "training",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Naval sailor training establishment",
+    "details": {
+      "role": "Basic training"
+    }
+  },
+  {
+    "id": "in_nu_barc",
+    "name": "Bhabha Atomic Research Centre",
+    "lat": 19.028,
+    "lon": 73.019,
+    "country": "India",
+    "cc": "IN",
+    "type": "nuclear",
+    "arm": "DAE",
+    "status": "active",
+    "desc": "Primary nuclear research/weapons facility",
+    "details": {
+      "role": "Nuclear weapons R&D, Pu production",
+      "notable": "Dhruva reactor for weapons-grade Pu"
+    }
+  },
+  {
+    "id": "in_nu_tarapur",
+    "name": "Tarapur Atomic Power Station",
+    "lat": 19.834,
+    "lon": 72.66,
+    "country": "India",
+    "cc": "IN",
+    "type": "nuclear",
+    "arm": "DAE",
+    "status": "active",
+    "desc": "BWR nuclear power plant",
+    "details": {
+      "role": "Nuclear power generation",
+      "notable": "India's first nuclear power station"
+    }
+  },
+  {
+    "id": "in_nu_pokhran",
+    "name": "Pokhran Nuclear Test Site",
+    "lat": 26.913,
+    "lon": 71.611,
+    "country": "India",
+    "cc": "IN",
+    "type": "nuclear",
+    "arm": "DRDO",
+    "status": "active",
+    "desc": "Nuclear test site (1974, 1998)",
+    "details": {
+      "role": "Nuclear weapons testing",
+      "notable": "Smiling Buddha (1974), Shakti (1998)"
+    }
+  },
+  {
+    "id": "in_ms_chandipur",
+    "name": "Chandipur Integrated Test Range",
+    "lat": 21.46,
+    "lon": 86.927,
+    "country": "India",
+    "cc": "IN",
+    "type": "missile_test",
+    "arm": "DRDO",
+    "status": "active",
+    "desc": "BrahMos, Agni, Prithvi missile testing",
+    "details": {
+      "role": "Missile development and testing",
+      "weapons_systems": [
+        "BrahMos",
+        "Agni-V",
+        "Prithvi-II"
+      ]
+    }
+  },
+  {
+    "id": "in_ms_wheeler",
+    "name": "Abdul Kalam Island (Wheeler)",
+    "lat": 20.755,
+    "lon": 87.085,
+    "country": "India",
+    "cc": "IN",
+    "type": "missile_test",
+    "arm": "DRDO",
+    "status": "active",
+    "desc": "Agni-5 ICBM test range",
+    "details": {
+      "role": "ICBM testing",
+      "weapons_systems": [
+        "Agni-V",
+        "K-4 SLBM"
+      ],
+      "notable": "Primary ICBM test site"
+    }
+  },
+  {
+    "id": "in_ms_sfc",
+    "name": "Strategic Forces Command HQ",
+    "lat": 28.6,
+    "lon": 77.2,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "SFC",
+    "status": "active",
+    "desc": "Nuclear triad command authority",
+    "details": {
+      "role": "Nuclear weapons delivery command",
+      "notable": "Controls Agni, K-series missiles"
+    }
+  },
+  {
+    "id": "in_ar_northern",
+    "name": "Northern Command (Udhampur)",
+    "lat": 32.93,
+    "lon": 75.14,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "J&K, LoC, LAC operations",
+    "details": {
+      "role": "Army Command HQ",
+      "personnel_est": 300000
+    }
+  },
+  {
+    "id": "in_ar_western",
+    "name": "Western Command (Chandigarh)",
+    "lat": 30.74,
+    "lon": 76.79,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Pakistan border Strike Corps",
+    "details": {
+      "role": "Army Command HQ",
+      "personnel_est": 250000
+    }
+  },
+  {
+    "id": "in_ar_eastern",
+    "name": "Eastern Command (Kolkata)",
+    "lat": 22.57,
+    "lon": 88.36,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "China LAC / Myanmar border",
+    "details": {
+      "role": "Army Command HQ",
+      "personnel_est": 200000
+    }
+  },
+  {
+    "id": "in_ar_southern",
+    "name": "Southern Command (Pune)",
+    "lat": 18.52,
+    "lon": 73.87,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Deccan region, strategic reserve",
+    "details": {
+      "role": "Army Command HQ",
+      "personnel_est": 150000
+    }
+  },
+  {
+    "id": "in_ar_central",
+    "name": "Central Command (Lucknow)",
+    "lat": 26.85,
+    "lon": 80.95,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Central India strategic reserve",
+    "details": {
+      "role": "Army Command HQ",
+      "personnel_est": 100000
+    }
+  },
+  {
+    "id": "in_ar_galwan",
+    "name": "Galwan Valley Forward Post",
+    "lat": 34.62,
+    "lon": 78.24,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "2020 India-China clash site, fortified",
+    "details": {
+      "role": "Forward post",
+      "notable": "20 Indian soldiers killed June 2020"
+    }
+  },
+  {
+    "id": "in_ar_siachen",
+    "name": "Siachen Base Camp",
+    "lat": 35.0,
+    "lon": 77.42,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Siachen Glacier ops, highest battlefield",
+    "details": {
+      "role": "Glacier operations",
+      "notable": "World's highest battlefield"
+    }
+  },
+  {
+    "id": "in_ar_pangong",
+    "name": "Pangong Lake Positions",
+    "lat": 33.75,
+    "lon": 79.0,
+    "country": "India",
+    "cc": "IN",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "India-China standoff 2020, Finger 8",
+    "details": {
+      "role": "Forward fortifications"
+    }
+  },
+  {
+    "id": "cn_af_anshan",
+    "name": "Anshan Air Base",
+    "lat": 41.095,
+    "lon": 122.854,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "J-11/J-15 base, Northern Theater"
+  },
+  {
+    "id": "cn_af_changchun",
+    "name": "Changchun Dafangshen AB",
+    "lat": 43.885,
+    "lon": 125.217,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "PLAAF Northern Theater"
+  },
+  {
+    "id": "cn_af_chengdu",
+    "name": "Chengdu Shuangliu AB",
+    "lat": 30.578,
+    "lon": 103.947,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "J-20 stealth fighter base"
+  },
+  {
+    "id": "cn_af_dandong",
+    "name": "Dandong Air Base",
+    "lat": 40.316,
+    "lon": 124.277,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Forward base near North Korea"
+  },
+  {
+    "id": "cn_af_datong",
+    "name": "Datong Air Base",
+    "lat": 40.075,
+    "lon": 113.475,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "PLAAF Northern Theater"
+  },
+  {
+    "id": "cn_af_fuzhou",
+    "name": "Fuzhou Air Base",
+    "lat": 25.93,
+    "lon": 119.32,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Taiwan Strait ops, Su-30MK2"
+  },
+  {
+    "id": "cn_af_guangzhou",
+    "name": "Guangzhou Baiyun AB",
+    "lat": 23.392,
+    "lon": 113.308,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Southern Theater Command air"
+  },
+  {
+    "id": "cn_af_guilin",
+    "name": "Guilin Liangjiang AB",
+    "lat": 25.218,
+    "lon": 110.039,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Southern Theater"
+  },
+  {
+    "id": "cn_af_hohhot",
+    "name": "Hohhot Baita AB",
+    "lat": 40.852,
+    "lon": 111.825,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Northern Theater"
+  },
+  {
+    "id": "cn_af_jinan",
+    "name": "Jinan Air Base",
+    "lat": 36.857,
+    "lon": 117.207,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Eastern Theater HQ air"
+  },
+  {
+    "id": "cn_af_kashgar",
+    "name": "Kashgar Air Base",
+    "lat": 39.543,
+    "lon": 76.02,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Western Theater, Xinjiang"
+  },
+  {
+    "id": "cn_af_kunming",
+    "name": "Kunming Wujiaba AB",
+    "lat": 24.992,
+    "lon": 102.743,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Yunnan, Vietnam border"
+  },
+  {
+    "id": "cn_af_lhasa",
+    "name": "Lhasa Gonggar AB",
+    "lat": 29.297,
+    "lon": 90.912,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Tibet, near India border"
+  },
+  {
+    "id": "cn_af_linfen",
+    "name": "Linfen Qiaoli AB",
+    "lat": 35.998,
+    "lon": 111.52,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Nuclear-capable bomber base"
+  },
+  {
+    "id": "cn_af_longtian",
+    "name": "Longtian Air Base",
+    "lat": 25.67,
+    "lon": 119.3,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Taiwan Strait, J-16 fighters"
+  },
+  {
+    "id": "cn_af_nanning",
+    "name": "Nanning Wuxu AB",
+    "lat": 22.608,
+    "lon": 108.174,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Near Vietnam border"
+  },
+  {
+    "id": "cn_af_ngari",
+    "name": "Ngari Gunsa AB",
+    "lat": 32.098,
+    "lon": 80.053,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "World's highest-altitude air base, near India"
+  },
+  {
+    "id": "cn_af_shigatse",
+    "name": "Shigatse Peace AB",
+    "lat": 29.352,
+    "lon": 88.913,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Tibet, near India/Bhutan border"
+  },
+  {
+    "id": "cn_af_urumqi",
+    "name": "Urumqi Diwopu AB",
+    "lat": 43.907,
+    "lon": 87.472,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Western Theater HQ air"
+  },
+  {
+    "id": "cn_af_wuhan",
+    "name": "Wuhan Tianhe AB",
+    "lat": 30.784,
+    "lon": 114.208,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Central Theater, J-20 base"
+  },
+  {
+    "id": "cn_af_xian",
+    "name": "Xi'an Yanliang AB",
+    "lat": 34.437,
+    "lon": 109.121,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "H-6 bomber base, flight test center"
+  },
+  {
+    "id": "cn_af_yanbian",
+    "name": "Yanbian Air Base",
+    "lat": 42.903,
+    "lon": 129.476,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Near NK/Russia triple border"
+  },
+  {
+    "id": "cn_af_zhanjiang",
+    "name": "Zhanjiang Air Base",
+    "lat": 21.214,
+    "lon": 110.403,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "South China Sea operations"
+  },
+  {
+    "id": "cn_af_jiaxing",
+    "name": "Jiaxing Air Base",
+    "lat": 30.77,
+    "lon": 120.87,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Eastern Theater, J-20"
+  },
+  {
+    "id": "cn_af_hotan",
+    "name": "Hotan Air Base",
+    "lat": 37.04,
+    "lon": 79.86,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Xinjiang, near India border"
+  },
+  {
+    "id": "cn_af_changsha",
+    "name": "Changsha Datuopu AB",
+    "lat": 28.191,
+    "lon": 113.06,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Central Theater"
+  },
+  {
+    "id": "cn_af_nanjing",
+    "name": "Nanjing Dajiaochang AB",
+    "lat": 32.023,
+    "lon": 118.847,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Eastern Theater Command HQ"
+  },
+  {
+    "id": "cn_af_shenyang",
+    "name": "Shenyang Beiling AB",
+    "lat": 41.823,
+    "lon": 123.516,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Northern Theater Command"
+  },
+  {
+    "id": "cn_af_lanzhou",
+    "name": "Lanzhou Zhongchuan AB",
+    "lat": 36.515,
+    "lon": 103.62,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Western Theater"
+  },
+  {
+    "id": "cn_af_hefei",
+    "name": "Hefei Luogang AB",
+    "lat": 31.78,
+    "lon": 117.18,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLAAF",
+    "status": "active",
+    "desc": "Eastern Theater"
+  },
+  {
+    "id": "cn_nv_dalian",
+    "name": "Dalian Naval Base",
+    "lat": 38.918,
+    "lon": 121.633,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "Carrier Liaoning homeport"
+  },
+  {
+    "id": "cn_nv_qingdao",
+    "name": "Qingdao Naval Base",
+    "lat": 36.067,
+    "lon": 120.383,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "North Sea Fleet HQ, submarine base"
+  },
+  {
+    "id": "cn_nv_ningbo",
+    "name": "Ningbo Naval Base",
+    "lat": 29.798,
+    "lon": 121.551,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "East Sea Fleet"
+  },
+  {
+    "id": "cn_nv_sanya",
+    "name": "Yulin Naval Base (Sanya)",
+    "lat": 18.229,
+    "lon": 109.582,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "Underground SSBN base, South China Sea"
+  },
+  {
+    "id": "cn_nv_zhoushan",
+    "name": "Zhoushan Naval Base",
+    "lat": 29.986,
+    "lon": 122.107,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "East Sea Fleet, carrier ops"
+  },
+  {
+    "id": "cn_nv_zhanjiang",
+    "name": "Zhanjiang Naval Base",
+    "lat": 21.193,
+    "lon": 110.415,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "South Sea Fleet HQ"
+  },
+  {
+    "id": "cn_nv_huludao",
+    "name": "Huludao Submarine Shipyard",
+    "lat": 40.717,
+    "lon": 120.952,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLAN",
+    "status": "active",
+    "desc": "SSBN Type 096 construction"
+  },
+  {
+    "id": "cn_scs_fiery",
+    "name": "Fiery Cross Reef Base",
+    "lat": 9.55,
+    "lon": 112.888,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Artificial island, 3km runway, J-11B deployed"
+  },
+  {
+    "id": "cn_scs_mischief",
+    "name": "Mischief Reef Base",
+    "lat": 9.917,
+    "lon": 115.533,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Largest SCS artificial island"
+  },
+  {
+    "id": "cn_scs_subi",
+    "name": "Subi Reef Base",
+    "lat": 10.924,
+    "lon": 114.085,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "3km runway, HQ-9 SAMs"
+  },
+  {
+    "id": "cn_scs_woody",
+    "name": "Woody Island (Yongxing)",
+    "lat": 16.833,
+    "lon": 112.34,
+    "country": "China",
+    "cc": "CN",
+    "type": "air_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Paracel Islands HQ, J-10 fighters"
+  },
+  {
+    "id": "cn_scs_cuarteron",
+    "name": "Cuarteron Reef",
+    "lat": 8.858,
+    "lon": 112.85,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Radar, artillery stations"
+  },
+  {
+    "id": "cn_scs_gaven",
+    "name": "Gaven Reefs",
+    "lat": 10.21,
+    "lon": 114.22,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Defense platform"
+  },
+  {
+    "id": "cn_scs_hughes",
+    "name": "Hughes Reef",
+    "lat": 9.924,
+    "lon": 114.509,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Defense platform"
+  },
+  {
+    "id": "cn_nu_yumen",
+    "name": "Yumen ICBM Silo Field",
+    "lat": 40.15,
+    "lon": 97.35,
+    "country": "China",
+    "cc": "CN",
+    "type": "nuclear",
+    "arm": "PLA Rocket Force",
+    "status": "active",
+    "desc": "120+ DF-41 ICBM silos"
+  },
+  {
+    "id": "cn_nu_hami",
+    "name": "Hami ICBM Silo Field",
+    "lat": 43.1,
+    "lon": 93.4,
+    "country": "China",
+    "cc": "CN",
+    "type": "nuclear",
+    "arm": "PLA Rocket Force",
+    "status": "construction",
+    "desc": "110+ ICBM silos under construction"
+  },
+  {
+    "id": "cn_nu_jilantai",
+    "name": "Jilantai ICBM Silo Field",
+    "lat": 39.28,
+    "lon": 105.71,
+    "country": "China",
+    "cc": "CN",
+    "type": "nuclear",
+    "arm": "PLA Rocket Force",
+    "status": "active",
+    "desc": "DF-41 silo field"
+  },
+  {
+    "id": "cn_nu_ordos",
+    "name": "Ordos DF-5 Silo Field",
+    "lat": 38.9,
+    "lon": 107.5,
+    "country": "China",
+    "cc": "CN",
+    "type": "nuclear",
+    "arm": "PLA Rocket Force",
+    "status": "active",
+    "desc": "Older DF-5B ICBM silos"
+  },
+  {
+    "id": "cn_lc_xichang",
+    "name": "Xichang Satellite Launch Center",
+    "lat": 28.246,
+    "lon": 102.027,
+    "country": "China",
+    "cc": "CN",
+    "type": "missile_test",
+    "arm": "PLA/CNSA",
+    "status": "active",
+    "desc": "Space/ICBM launch"
+  },
+  {
+    "id": "cn_lc_jiuquan",
+    "name": "Jiuquan Satellite Launch Center",
+    "lat": 40.96,
+    "lon": 100.29,
+    "country": "China",
+    "cc": "CN",
+    "type": "missile_test",
+    "arm": "PLA/CNSA",
+    "status": "active",
+    "desc": "Military satellite launches"
+  },
+  {
+    "id": "cn_lc_taiyuan",
+    "name": "Taiyuan Satellite Launch Center",
+    "lat": 38.849,
+    "lon": 111.613,
+    "country": "China",
+    "cc": "CN",
+    "type": "missile_test",
+    "arm": "PLA/CNSA",
+    "status": "active",
+    "desc": "Polar orbit military sats"
+  },
+  {
+    "id": "cn_ov_djibouti",
+    "name": "PLA Support Base Djibouti",
+    "lat": 11.592,
+    "lon": 43.06,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLA Navy",
+    "status": "active",
+    "desc": "China's first overseas base"
+  },
+  {
+    "id": "cn_ov_gwadar",
+    "name": "Gwadar Port (Military Dual-Use)",
+    "lat": 25.124,
+    "lon": 62.322,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLA Navy",
+    "status": "active",
+    "desc": "CPEC hub, dual-use port"
+  },
+  {
+    "id": "cn_ov_ream",
+    "name": "Ream Naval Base (Cambodia)",
+    "lat": 10.503,
+    "lon": 103.609,
+    "country": "China",
+    "cc": "CN",
+    "type": "naval_base",
+    "arm": "PLA Navy",
+    "status": "construction",
+    "desc": "PLA access rights, second overseas base"
+  },
+  {
+    "id": "cn_ml_tibet",
+    "name": "Tibet Military Garrison HQ",
+    "lat": 29.65,
+    "lon": 91.12,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Tibet Military District HQ"
+  },
+  {
+    "id": "cn_ml_aksai",
+    "name": "Aksai Chin Garrison",
+    "lat": 35.055,
+    "lon": 79.984,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Disputed territory garrison"
+  },
+  {
+    "id": "cn_ml_xinjiang",
+    "name": "Xinjiang Military Complex",
+    "lat": 39.74,
+    "lon": 75.65,
+    "country": "China",
+    "cc": "CN",
+    "type": "military_base",
+    "arm": "PLA",
+    "status": "active",
+    "desc": "Western frontier garrison"
+  },
+  {
+    "id": "cn_ml_golmud",
+    "name": "Golmud Missile Base",
+    "lat": 36.4,
+    "lon": 94.9,
+    "country": "China",
+    "cc": "CN",
+    "type": "nuclear",
+    "arm": "PLA Rocket Force",
+    "status": "active",
+    "desc": "DF-41 mobile TEL operations"
+  },
+  {
+    "id": "pk_af_bholari",
+    "name": "PAF Base Bholari",
+    "lat": 25.316,
+    "lon": 68.15,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "JF-17 base, Sindh coast"
+  },
+  {
+    "id": "pk_af_chaklala",
+    "name": "PAF Base Chaklala",
+    "lat": 33.616,
+    "lon": 73.099,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Near GHQ, VIP transport"
+  },
+  {
+    "id": "pk_af_jacobabad",
+    "name": "PAF Base Shahbaz",
+    "lat": 28.284,
+    "lon": 68.45,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "JF-17, used by US for Afghan ops"
+  },
+  {
+    "id": "pk_af_kamra",
+    "name": "PAF Base Kamra (Minhas)",
+    "lat": 33.871,
+    "lon": 72.401,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "JF-17 manufacturing, F-16 maintenance"
+  },
+  {
+    "id": "pk_af_lahore",
+    "name": "PAF Base Lahore",
+    "lat": 31.522,
+    "lon": 74.404,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "PAF Lahore"
+  },
+  {
+    "id": "pk_af_masroor",
+    "name": "PAF Base Masroor (Karachi)",
+    "lat": 24.894,
+    "lon": 66.939,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Southern Air Command HQ"
+  },
+  {
+    "id": "pk_af_mushaf",
+    "name": "PAF Base Mushaf (Sargodha)",
+    "lat": 32.049,
+    "lon": 72.665,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "F-16 wing, nuclear capable"
+  },
+  {
+    "id": "pk_af_peshawar",
+    "name": "PAF Base Peshawar",
+    "lat": 33.99,
+    "lon": 71.514,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "KPK, Afghanistan border"
+  },
+  {
+    "id": "pk_af_quetta",
+    "name": "PAF Base Quetta (Samungli)",
+    "lat": 30.251,
+    "lon": 66.948,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Balochistan base"
+  },
+  {
+    "id": "pk_af_sukkur",
+    "name": "PAF Base Sukkur",
+    "lat": 27.722,
+    "lon": 68.792,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Sindh"
+  },
+  {
+    "id": "pk_af_faisal",
+    "name": "PAF Base Faisal (Karachi)",
+    "lat": 24.89,
+    "lon": 67.22,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Maritime patrol, P-3C Orion"
+  },
+  {
+    "id": "pk_af_kohat",
+    "name": "PAF Base Kohat",
+    "lat": 33.58,
+    "lon": 71.43,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "KPK base"
+  },
+  {
+    "id": "pk_af_rafiqui",
+    "name": "PAF Base Rafiqui",
+    "lat": 30.758,
+    "lon": 72.285,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Shorkot, Punjab"
+  },
+  {
+    "id": "pk_af_mianwali",
+    "name": "PAF Base Mianwali",
+    "lat": 32.563,
+    "lon": 71.57,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "Punjab"
+  },
+  {
+    "id": "pk_nv_karachi",
+    "name": "PNS Iqbal (Karachi)",
+    "lat": 24.849,
+    "lon": 67.014,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "PN main naval base"
+  },
+  {
+    "id": "pk_nv_ormara",
+    "name": "PNS Siddiqui (Ormara)",
+    "lat": 25.21,
+    "lon": 64.636,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Submarine base, Balochistan"
+  },
+  {
+    "id": "pk_nv_gwadar",
+    "name": "PNS Akram (Gwadar)",
+    "lat": 25.124,
+    "lon": 62.322,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "construction",
+    "desc": "CPEC port, future submarine base"
+  },
+  {
+    "id": "pk_nv_mehran",
+    "name": "PNS Mehran (Karachi)",
+    "lat": 24.9,
+    "lon": 67.17,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Naval air station"
+  },
+  {
+    "id": "pk_nu_kahuta",
+    "name": "KRL Kahuta",
+    "lat": 33.589,
+    "lon": 73.391,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "nuclear",
+    "arm": "SPD",
+    "status": "active",
+    "desc": "HEU enrichment, nuclear weapons"
+  },
+  {
+    "id": "pk_nu_khushab",
+    "name": "Khushab Nuclear Complex",
+    "lat": 32.079,
+    "lon": 72.2,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "nuclear",
+    "arm": "SPD",
+    "status": "active",
+    "desc": "4 Pu production reactors"
+  },
+  {
+    "id": "pk_nu_dg_khan",
+    "name": "Dera Ghazi Khan Uranium",
+    "lat": 30.046,
+    "lon": 70.635,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "nuclear",
+    "arm": "SPD",
+    "status": "active",
+    "desc": "Uranium ore processing"
+  },
+  {
+    "id": "pk_nu_wah",
+    "name": "Wah Ordnance Factories",
+    "lat": 33.77,
+    "lon": 72.76,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "nuclear",
+    "arm": "SPD",
+    "status": "active",
+    "desc": "Nuclear warhead assembly"
+  },
+  {
+    "id": "pk_ms_fatah",
+    "name": "Fatah Jang Missile Storage",
+    "lat": 33.605,
+    "lon": 72.723,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "missile_test",
+    "arm": "SPD",
+    "status": "active",
+    "desc": "Ghauri/Shaheen storage"
+  },
+  {
+    "id": "pk_ar_ghq",
+    "name": "Army GHQ Rawalpindi",
+    "lat": 33.601,
+    "lon": 73.068,
+    "country": "Pakistan",
+    "cc": "PK",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Pakistan Army headquarters"
+  },
+  {
+    "id": "ru_af_kubinka",
+    "name": "Kubinka Air Base",
+    "lat": 55.612,
+    "lon": 36.662,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Su-57 test/display base"
+  },
+  {
+    "id": "ru_af_chkalovsk",
+    "name": "Chkalovsk AB (Kaliningrad)",
+    "lat": 54.71,
+    "lon": 20.592,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Baltic Fleet aviation, Tu-22M"
+  },
+  {
+    "id": "ru_af_kant",
+    "name": "Kant AB (Kyrgyzstan)",
+    "lat": 42.853,
+    "lon": 74.846,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Central Asia Russian base"
+  },
+  {
+    "id": "ru_af_khmeimim",
+    "name": "Khmeimim AB (Syria)",
+    "lat": 35.411,
+    "lon": 35.945,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Main Russian base in Syria, Su-35, S-400"
+  },
+  {
+    "id": "ru_af_mozdok",
+    "name": "Mozdok Air Base",
+    "lat": 43.742,
+    "lon": 44.589,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Near Georgia border"
+  },
+  {
+    "id": "ru_af_saki",
+    "name": "Saki AB (Crimea)",
+    "lat": 45.094,
+    "lon": 33.594,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Occupied Crimea, attacked 2022"
+  },
+  {
+    "id": "ru_af_engels",
+    "name": "Engels-2 Air Base",
+    "lat": 51.453,
+    "lon": 46.187,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Tu-160 strategic bombers, nuclear strikes"
+  },
+  {
+    "id": "ru_af_olenya",
+    "name": "Olenya Air Base",
+    "lat": 68.15,
+    "lon": 33.46,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Tu-22M3 Arctic strike"
+  },
+  {
+    "id": "ru_af_dyagilevo",
+    "name": "Dyagilevo AB (Ryazan)",
+    "lat": 54.61,
+    "lon": 39.58,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Long-range aviation, Tu-22M3"
+  },
+  {
+    "id": "ru_af_shagol",
+    "name": "Shagol Air Base",
+    "lat": 55.273,
+    "lon": 61.322,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Ural Region, Su-34"
+  },
+  {
+    "id": "ru_af_domna",
+    "name": "Domna Air Base",
+    "lat": 51.848,
+    "lon": 113.179,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Eastern MD, Su-30SM"
+  },
+  {
+    "id": "ru_af_ugolny",
+    "name": "Ugolny Air Base",
+    "lat": 64.735,
+    "lon": 177.617,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Chukotka, strategic bomber staging"
+  },
+  {
+    "id": "ru_nv_severomorsk",
+    "name": "Severomorsk Northern Fleet HQ",
+    "lat": 69.074,
+    "lon": 33.419,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Northern Fleet HQ, SSBN base"
+  },
+  {
+    "id": "ru_nv_gadzhiyevo",
+    "name": "Gadzhiyevo SSBN Base",
+    "lat": 69.255,
+    "lon": 33.317,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Borei-class SSBN, second-strike"
+  },
+  {
+    "id": "ru_nv_vladivostok",
+    "name": "Vladivostok Pacific Fleet",
+    "lat": 43.118,
+    "lon": 131.896,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Pacific Fleet HQ"
+  },
+  {
+    "id": "ru_nv_sevastopol",
+    "name": "Sevastopol Naval Base",
+    "lat": 44.62,
+    "lon": 33.53,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Black Sea Fleet HQ (Crimea)"
+  },
+  {
+    "id": "ru_nv_novorossiysk",
+    "name": "Novorossiysk Naval Base",
+    "lat": 44.724,
+    "lon": 37.776,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Black Sea Fleet secondary"
+  },
+  {
+    "id": "ru_nv_baltiysk",
+    "name": "Baltiysk Baltic Fleet",
+    "lat": 54.648,
+    "lon": 19.893,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Baltic Fleet HQ"
+  },
+  {
+    "id": "ru_nv_tartus",
+    "name": "Tartus Naval Facility (Syria)",
+    "lat": 34.915,
+    "lon": 35.874,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Only Russian Mediterranean base"
+  },
+  {
+    "id": "ru_nv_severodvinsk",
+    "name": "Severodvinsk Submarine Yard",
+    "lat": 64.569,
+    "lon": 39.831,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "SSBN construction, Borei class"
+  },
+  {
+    "id": "ru_nu_novaya",
+    "name": "Novaya Zemlya Test Site",
+    "lat": 73.485,
+    "lon": 54.687,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "nuclear",
+    "arm": "MoD",
+    "status": "active",
+    "desc": "Nuclear test site"
+  },
+  {
+    "id": "ru_ms_kapustin",
+    "name": "Kapustin Yar Missile Range",
+    "lat": 48.571,
+    "lon": 45.798,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "missile_test",
+    "arm": "MoD",
+    "status": "active",
+    "desc": "ICBM/missile test range"
+  },
+  {
+    "id": "ru_ms_plesetsk",
+    "name": "Plesetsk Cosmodrome",
+    "lat": 62.925,
+    "lon": 40.577,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "missile_test",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Military satellite, ICBM testing"
+  },
+  {
+    "id": "ru_ml_kaliningrad",
+    "name": "Kaliningrad Military District",
+    "lat": 54.71,
+    "lon": 20.51,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Iskander-M, S-400, NATO flank"
+  },
+  {
+    "id": "ru_ml_arctic_nagur",
+    "name": "Nagurskoye Arctic Base",
+    "lat": 80.803,
+    "lon": 47.658,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "military_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Northernmost Russian base"
+  },
+  {
+    "id": "ru_ml_arctic_temp",
+    "name": "Temp Arctic Base",
+    "lat": 71.35,
+    "lon": 136.9,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "air_base",
+    "arm": "VKS",
+    "status": "active",
+    "desc": "Arctic base, restored 2014"
+  },
+  {
+    "id": "ru_ml_belarus",
+    "name": "Russian Forces Belarus",
+    "lat": 53.673,
+    "lon": 28.068,
+    "country": "Russia",
+    "cc": "RU",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Post-2022 deployment"
+  },
+  {
+    "id": "us_af_norfolk",
+    "name": "Naval Station Norfolk",
+    "lat": 36.943,
+    "lon": -76.309,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "World's largest naval station"
+  },
+  {
+    "id": "us_af_pendleton",
+    "name": "Camp Pendleton",
+    "lat": 33.38,
+    "lon": -117.4,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "USMC",
+    "status": "active",
+    "desc": "USMC West Coast, 1st Marine Div"
+  },
+  {
+    "id": "us_af_sandiego",
+    "name": "Naval Base San Diego",
+    "lat": 32.68,
+    "lon": -117.13,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Pacific Fleet surface force"
+  },
+  {
+    "id": "us_af_nellis",
+    "name": "Nellis AFB",
+    "lat": 36.24,
+    "lon": -115.03,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Red Flag exercises, F-35/F-22"
+  },
+  {
+    "id": "us_af_langley",
+    "name": "JB Langley-Eustis",
+    "lat": 37.08,
+    "lon": -76.36,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Air Combat Command HQ, F-22"
+  },
+  {
+    "id": "us_af_cheyenne",
+    "name": "Cheyenne Mountain NORAD",
+    "lat": 38.74,
+    "lon": -104.85,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "NORAD",
+    "status": "active",
+    "desc": "Missile warning, space surveillance"
+  },
+  {
+    "id": "us_af_peterson",
+    "name": "Peterson SFB",
+    "lat": 38.82,
+    "lon": -104.71,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USSF",
+    "status": "active",
+    "desc": "US Space Command HQ"
+  },
+  {
+    "id": "us_af_kings_bay",
+    "name": "Kings Bay Naval Sub Base",
+    "lat": 30.796,
+    "lon": -81.521,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Ohio-class SSBN Atlantic"
+  },
+  {
+    "id": "us_af_kitsap",
+    "name": "Naval Base Kitsap",
+    "lat": 47.562,
+    "lon": -122.658,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Trident SSBN Pacific"
+  },
+  {
+    "id": "us_af_whiteman",
+    "name": "Whiteman AFB",
+    "lat": 38.72,
+    "lon": -93.55,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "B-2 Spirit stealth bomber wing"
+  },
+  {
+    "id": "us_af_minot",
+    "name": "Minot AFB",
+    "lat": 48.416,
+    "lon": -101.358,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "B-52H + Minuteman III ICBMs"
+  },
+  {
+    "id": "us_af_vandenberg",
+    "name": "Vandenberg SFB",
+    "lat": 34.74,
+    "lon": -120.57,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USSF",
+    "status": "active",
+    "desc": "ICBM testing, space launches"
+  },
+  {
+    "id": "us_af_pearl",
+    "name": "Pearl Harbor-Hickam",
+    "lat": 21.353,
+    "lon": -157.975,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Pacific Fleet HQ"
+  },
+  {
+    "id": "us_af_liberty",
+    "name": "Fort Liberty (Bragg)",
+    "lat": 35.14,
+    "lon": -79.0,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "82nd Airborne, XVIII Corps"
+  },
+  {
+    "id": "us_af_hood",
+    "name": "Fort Hood (Cavazos)",
+    "lat": 31.14,
+    "lon": -97.78,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "III Corps, 1st Cavalry Division"
+  },
+  {
+    "id": "us_af_campbell",
+    "name": "Fort Campbell",
+    "lat": 36.66,
+    "lon": -87.47,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "101st Airborne Division"
+  },
+  {
+    "id": "us_af_stewart",
+    "name": "Fort Stewart",
+    "lat": 31.87,
+    "lon": -81.61,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "3rd Infantry Division"
+  },
+  {
+    "id": "us_af_lakenheath",
+    "name": "RAF Lakenheath (UK)",
+    "lat": 52.408,
+    "lon": 0.561,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "F-35A, B61 nuclear storage"
+  },
+  {
+    "id": "us_af_ramstein",
+    "name": "Ramstein AB (Germany)",
+    "lat": 49.436,
+    "lon": 7.6,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "USAFE HQ"
+  },
+  {
+    "id": "us_af_incirlik",
+    "name": "Incirlik AB (Turkey)",
+    "lat": 37.003,
+    "lon": 35.427,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "NATO nuclear storage B61"
+  },
+  {
+    "id": "us_af_kadena",
+    "name": "Kadena AB (Japan)",
+    "lat": 26.355,
+    "lon": 127.768,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Largest USAF base Asia"
+  },
+  {
+    "id": "us_af_yokosuka",
+    "name": "Yokosuka Naval Base",
+    "lat": 35.286,
+    "lon": 139.667,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "7th Fleet HQ, carrier homeport"
+  },
+  {
+    "id": "us_af_humphreys",
+    "name": "Camp Humphreys (Korea)",
+    "lat": 36.965,
+    "lon": 127.031,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Largest US overseas base"
+  },
+  {
+    "id": "us_af_osan",
+    "name": "Osan AB (Korea)",
+    "lat": 37.091,
+    "lon": 127.031,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "7th Air Force, near DMZ"
+  },
+  {
+    "id": "us_af_guam",
+    "name": "Andersen AFB (Guam)",
+    "lat": 13.583,
+    "lon": 144.929,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Pacific strategic bomber hub"
+  },
+  {
+    "id": "us_af_guam_nv",
+    "name": "Naval Base Guam",
+    "lat": 13.435,
+    "lon": 144.655,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Submarine forward base"
+  },
+  {
+    "id": "us_af_aludeid",
+    "name": "Al Udeid AB (Qatar)",
+    "lat": 25.117,
+    "lon": 51.317,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "CENTCOM forward HQ"
+  },
+  {
+    "id": "us_af_bahrain",
+    "name": "NSA Bahrain (5th Fleet)",
+    "lat": 26.232,
+    "lon": 50.587,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "5th Fleet HQ, Persian Gulf"
+  },
+  {
+    "id": "us_af_diego",
+    "name": "Diego Garcia",
+    "lat": -7.308,
+    "lon": 72.411,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Indian Ocean strategic hub"
+  },
+  {
+    "id": "us_af_lemonnier",
+    "name": "Camp Lemonnier (Djibouti)",
+    "lat": 11.546,
+    "lon": 43.148,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "DoD",
+    "status": "active",
+    "desc": "Only permanent US Africa base"
+  },
+  {
+    "id": "us_af_rota",
+    "name": "Naval Station Rota (Spain)",
+    "lat": 36.643,
+    "lon": -6.349,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "DDG BMD homeport"
+  },
+  {
+    "id": "us_af_sigonella",
+    "name": "NAS Sigonella (Italy)",
+    "lat": 37.41,
+    "lon": 14.92,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "P-8 ISR hub Mediterranean"
+  },
+  {
+    "id": "us_af_grafen",
+    "name": "Grafenw\u00f6hr (Germany)",
+    "lat": 49.717,
+    "lon": 11.906,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Largest training area Europe"
+  },
+  {
+    "id": "us_af_thule",
+    "name": "Pituffik SB (Thule, Greenland)",
+    "lat": 76.53,
+    "lon": -68.7,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USSF",
+    "status": "active",
+    "desc": "BMEW radar, northernmost US base"
+  },
+  {
+    "id": "us_af_deveselu",
+    "name": "Deveselu Aegis Ashore (Romania)",
+    "lat": 44.111,
+    "lon": 24.074,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "NATO",
+    "status": "active",
+    "desc": "SM-3 missile defense"
+  },
+  {
+    "id": "us_af_souda",
+    "name": "NSA Souda Bay (Crete)",
+    "lat": 35.531,
+    "lon": 24.072,
+    "country": "USA",
+    "cc": "US",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Mediterranean logistics, P-8"
+  },
+  {
+    "id": "us_af_bondsteel",
+    "name": "Camp Bondsteel (Kosovo)",
+    "lat": 42.367,
+    "lon": 21.133,
+    "country": "USA",
+    "cc": "US",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Largest US Balkans base"
+  },
+  {
+    "id": "us_af_ain",
+    "name": "Ain al-Asad AB (Iraq)",
+    "lat": 33.799,
+    "lon": 42.439,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Coalition base, attacked by Iran 2020"
+  },
+  {
+    "id": "us_af_dhafra",
+    "name": "Al Dhafra AB (UAE)",
+    "lat": 24.242,
+    "lon": 54.547,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "F-22, B-2 deployments"
+  },
+  {
+    "id": "us_af_yokota",
+    "name": "Yokota AB (Japan)",
+    "lat": 35.749,
+    "lon": 139.349,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "USFJ HQ"
+  },
+  {
+    "id": "us_af_misawa",
+    "name": "Misawa AB (Japan)",
+    "lat": 40.703,
+    "lon": 141.368,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "NSA/SIGINT, F-16"
+  },
+  {
+    "id": "us_af_warren",
+    "name": "F.E. Warren AFB",
+    "lat": 41.15,
+    "lon": -104.86,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Minuteman III ICBM fields"
+  },
+  {
+    "id": "us_af_malmstrom",
+    "name": "Malmstrom AFB",
+    "lat": 47.505,
+    "lon": -111.183,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Minuteman III ICBM wing"
+  },
+  {
+    "id": "us_af_barksdale",
+    "name": "Barksdale AFB",
+    "lat": 32.501,
+    "lon": -93.663,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "B-52H Global Strike Command"
+  },
+  {
+    "id": "us_af_dyess",
+    "name": "Dyess AFB",
+    "lat": 32.421,
+    "lon": -99.855,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "B-1B Lancer bomber wing"
+  },
+  {
+    "id": "us_af_ellsworth",
+    "name": "Ellsworth AFB",
+    "lat": 44.145,
+    "lon": -103.104,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "B-1B Lancer bomber wing"
+  },
+  {
+    "id": "us_af_tyndall",
+    "name": "Tyndall AFB",
+    "lat": 30.07,
+    "lon": -85.58,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "F-22 training, NORAD Southeast"
+  },
+  {
+    "id": "us_af_eglin",
+    "name": "Eglin AFB",
+    "lat": 30.48,
+    "lon": -86.53,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "Largest USAF base, weapons testing"
+  },
+  {
+    "id": "us_af_hill",
+    "name": "Hill AFB",
+    "lat": 41.124,
+    "lon": -111.973,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "F-35A operational wing"
+  },
+  {
+    "id": "us_af_luke",
+    "name": "Luke AFB",
+    "lat": 33.535,
+    "lon": -112.383,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "F-35 pilot training center"
+  },
+  {
+    "id": "us_af_shaw",
+    "name": "Shaw AFB",
+    "lat": 33.972,
+    "lon": -80.476,
+    "country": "USA",
+    "cc": "US",
+    "type": "air_base",
+    "arm": "USAF",
+    "status": "active",
+    "desc": "F-16/F-35, air combat ops"
+  },
+  {
+    "id": "uk_af_akrotiri",
+    "name": "RAF Akrotiri (Cyprus)",
+    "lat": 34.591,
+    "lon": 32.987,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "SBA Cyprus, Typhoon, ME ops hub"
+  },
+  {
+    "id": "uk_af_marham",
+    "name": "RAF Marham",
+    "lat": 52.65,
+    "lon": 0.55,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "F-35B Lightning II wing"
+  },
+  {
+    "id": "uk_af_brize",
+    "name": "RAF Brize Norton",
+    "lat": 51.75,
+    "lon": -1.58,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "Air Mobility, A400M, C-17"
+  },
+  {
+    "id": "uk_af_coningsby",
+    "name": "RAF Coningsby",
+    "lat": 53.093,
+    "lon": -0.166,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "Typhoon QRA North"
+  },
+  {
+    "id": "uk_af_lossiemouth",
+    "name": "RAF Lossiemouth",
+    "lat": 57.705,
+    "lon": -3.339,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "Typhoon QRA North, P-8 Poseidon"
+  },
+  {
+    "id": "uk_af_waddington",
+    "name": "RAF Waddington",
+    "lat": 53.166,
+    "lon": -0.524,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "ISR, ISTAR, MQ-9 Reaper ops"
+  },
+  {
+    "id": "uk_af_odiham",
+    "name": "RAF Odiham",
+    "lat": 51.234,
+    "lon": -0.943,
+    "country": "UK",
+    "cc": "GB",
+    "type": "air_base",
+    "arm": "RAF",
+    "status": "active",
+    "desc": "Chinook helicopter wing"
+  },
+  {
+    "id": "uk_nv_portsmouth",
+    "name": "HMNB Portsmouth",
+    "lat": 50.8,
+    "lon": -1.11,
+    "country": "UK",
+    "cc": "GB",
+    "type": "naval_base",
+    "arm": "Royal Navy",
+    "status": "active",
+    "desc": "QE-class carrier homeport"
+  },
+  {
+    "id": "uk_nv_faslane",
+    "name": "HMNB Clyde (Faslane)",
+    "lat": 56.08,
+    "lon": -4.84,
+    "country": "UK",
+    "cc": "GB",
+    "type": "naval_base",
+    "arm": "Royal Navy",
+    "status": "active",
+    "desc": "Trident SSBN, nuclear deterrent"
+  },
+  {
+    "id": "uk_nv_devonport",
+    "name": "HMNB Devonport",
+    "lat": 50.383,
+    "lon": -4.187,
+    "country": "UK",
+    "cc": "GB",
+    "type": "naval_base",
+    "arm": "Royal Navy",
+    "status": "active",
+    "desc": "Astute SSN base, refit facility"
+  },
+  {
+    "id": "fr_af_istres",
+    "name": "BA 125 Istres-Le Tub\u00e9",
+    "lat": 43.528,
+    "lon": 4.928,
+    "country": "France",
+    "cc": "FR",
+    "type": "air_base",
+    "arm": "AdA",
+    "status": "active",
+    "desc": "Strategic air forces, Rafale nuclear"
+  },
+  {
+    "id": "fr_af_avord",
+    "name": "BA 702 Avord",
+    "lat": 47.053,
+    "lon": 2.632,
+    "country": "France",
+    "cc": "FR",
+    "type": "air_base",
+    "arm": "AdA",
+    "status": "active",
+    "desc": "AWACS, ISR, C2"
+  },
+  {
+    "id": "fr_af_mont_verdun",
+    "name": "BA 942 Lyon-Mont Verdun",
+    "lat": 45.869,
+    "lon": 4.77,
+    "country": "France",
+    "cc": "FR",
+    "type": "air_base",
+    "arm": "AdA",
+    "status": "active",
+    "desc": "Air defense command center"
+  },
+  {
+    "id": "fr_af_saint_dizier",
+    "name": "BA 113 Saint-Dizier",
+    "lat": 48.636,
+    "lon": 4.9,
+    "country": "France",
+    "cc": "FR",
+    "type": "air_base",
+    "arm": "AdA",
+    "status": "active",
+    "desc": "Rafale strike wing, nuclear capable"
+  },
+  {
+    "id": "fr_nv_toulon",
+    "name": "Toulon Naval Base",
+    "lat": 43.1,
+    "lon": 5.928,
+    "country": "France",
+    "cc": "FR",
+    "type": "naval_base",
+    "arm": "Marine Nationale",
+    "status": "active",
+    "desc": "Charles de Gaulle carrier homeport"
+  },
+  {
+    "id": "fr_nv_brest",
+    "name": "\u00cele Longue SSBN Base",
+    "lat": 48.31,
+    "lon": -4.57,
+    "country": "France",
+    "cc": "FR",
+    "type": "naval_base",
+    "arm": "Marine Nationale",
+    "status": "active",
+    "desc": "Triomphant SSBN, nuclear deterrent"
+  },
+  {
+    "id": "fr_ov_djibouti",
+    "name": "FFDJ Djibouti",
+    "lat": 11.53,
+    "lon": 43.14,
+    "country": "France",
+    "cc": "FR",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "French forces Djibouti"
+  },
+  {
+    "id": "fr_ov_reunion",
+    "name": "French Forces Indian Ocean",
+    "lat": -21.34,
+    "lon": 55.48,
+    "country": "France",
+    "cc": "FR",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "La R\u00e9union garrison"
+  },
+  {
+    "id": "fr_ov_gabon",
+    "name": "French Forces Gabon",
+    "lat": 0.403,
+    "lon": 9.454,
+    "country": "France",
+    "cc": "FR",
+    "type": "military_base",
+    "arm": "Army",
+    "status": "active",
+    "desc": "Libreville garrison"
+  },
+  {
+    "id": "il_af_nevatim",
+    "name": "Nevatim Air Base",
+    "lat": 31.208,
+    "lon": 35.013,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "F-35I Adir, long-range strike"
+  },
+  {
+    "id": "il_af_ramon",
+    "name": "Ramon Air Base",
+    "lat": 30.78,
+    "lon": 34.67,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "F-16, Negev desert"
+  },
+  {
+    "id": "il_af_hatzor",
+    "name": "Hatzor Air Base",
+    "lat": 31.77,
+    "lon": 34.73,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "F-16, Iron Dome ops"
+  },
+  {
+    "id": "il_af_palmachim",
+    "name": "Palmachim Air Base",
+    "lat": 31.896,
+    "lon": 34.69,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Jericho IRBM, spy sat launches"
+  },
+  {
+    "id": "il_af_ramat",
+    "name": "Ramat David Air Base",
+    "lat": 32.665,
+    "lon": 35.179,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "F-16 base, northern Israel"
+  },
+  {
+    "id": "il_af_telnof",
+    "name": "Tel Nof Air Base",
+    "lat": 31.84,
+    "lon": 34.818,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "Central base, F-15"
+  },
+  {
+    "id": "il_af_hatzerim",
+    "name": "Hatzerim Air Base",
+    "lat": 31.233,
+    "lon": 34.662,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "air_base",
+    "arm": "IAF",
+    "status": "active",
+    "desc": "IAF Flight School"
+  },
+  {
+    "id": "il_nu_dimona",
+    "name": "Negev Nuclear Research Centre",
+    "lat": 31.003,
+    "lon": 35.148,
+    "country": "Israel",
+    "cc": "IL",
+    "type": "nuclear",
+    "arm": "IDF",
+    "status": "active",
+    "desc": "80-400 warheads estimated"
+  },
+  {
+    "id": "ir_nu_natanz",
+    "name": "Natanz Enrichment Complex",
+    "lat": 33.723,
+    "lon": 51.727,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "nuclear",
+    "arm": "AEOI",
+    "status": "active",
+    "desc": "Main uranium enrichment, 60% HEU"
+  },
+  {
+    "id": "ir_nu_fordow",
+    "name": "Fordow FEP",
+    "lat": 34.885,
+    "lon": 50.994,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "nuclear",
+    "arm": "AEOI",
+    "status": "active",
+    "desc": "Underground enrichment, mountain hardened"
+  },
+  {
+    "id": "ir_nu_arak",
+    "name": "Arak Heavy Water Reactor",
+    "lat": 34.097,
+    "lon": 49.239,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "nuclear",
+    "arm": "AEOI",
+    "status": "active",
+    "desc": "IR-40 heavy water reactor"
+  },
+  {
+    "id": "ir_nu_bushehr",
+    "name": "Bushehr Nuclear PP",
+    "lat": 28.829,
+    "lon": 50.894,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "nuclear",
+    "arm": "AEOI",
+    "status": "active",
+    "desc": "Russian-built NPP"
+  },
+  {
+    "id": "ir_ms_parchin",
+    "name": "Parchin Military Complex",
+    "lat": 35.523,
+    "lon": 51.779,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "missile_test",
+    "arm": "IRGC",
+    "status": "active",
+    "desc": "Explosive testing, nuclear suspected"
+  },
+  {
+    "id": "ir_ms_imam_ali",
+    "name": "Imam Ali Missile Base",
+    "lat": 35.215,
+    "lon": 46.182,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "missile_test",
+    "arm": "IRGC",
+    "status": "active",
+    "desc": "Underground, used vs Israel Apr 2024"
+  },
+  {
+    "id": "ir_af_isfahan",
+    "name": "Isfahan Air Base",
+    "lat": 32.501,
+    "lon": 51.862,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "air_base",
+    "arm": "IRIAF",
+    "status": "active",
+    "desc": "F-14 Tomcat, MiG-29 base"
+  },
+  {
+    "id": "ir_af_tabriz",
+    "name": "Tabriz Air Base",
+    "lat": 38.134,
+    "lon": 46.235,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "air_base",
+    "arm": "IRIAF",
+    "status": "active",
+    "desc": "Northern Iran defense"
+  },
+  {
+    "id": "ir_af_mehrabad",
+    "name": "Mehrabad AB (Tehran)",
+    "lat": 35.689,
+    "lon": 51.313,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "air_base",
+    "arm": "IRIAF",
+    "status": "active",
+    "desc": "Tehran defense"
+  },
+  {
+    "id": "ir_nv_bandar",
+    "name": "Bandar Abbas Naval Base",
+    "lat": 27.187,
+    "lon": 56.288,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "naval_base",
+    "arm": "IRIN",
+    "status": "active",
+    "desc": "Main base, Strait of Hormuz"
+  },
+  {
+    "id": "ir_nv_jask",
+    "name": "Jask Naval Base",
+    "lat": 25.65,
+    "lon": 57.77,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "naval_base",
+    "arm": "IRGCN",
+    "status": "active",
+    "desc": "East of Hormuz, IRGCN"
+  },
+  {
+    "id": "ir_shahed",
+    "name": "Shahed Drone Factory",
+    "lat": 32.683,
+    "lon": 51.652,
+    "country": "Iran",
+    "cc": "IR",
+    "type": "military_base",
+    "arm": "IRGC",
+    "status": "active",
+    "desc": "Shahed-136 manufacturing"
+  },
+  {
+    "id": "kp_nu_yongbyon",
+    "name": "Yongbyon Nuclear Complex",
+    "lat": 39.793,
+    "lon": 125.755,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "nuclear",
+    "arm": "KAFR",
+    "status": "active",
+    "desc": "Plutonium/HEU production"
+  },
+  {
+    "id": "kp_nu_punggye",
+    "name": "Punggye-ri Test Site",
+    "lat": 41.293,
+    "lon": 129.085,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "nuclear",
+    "arm": "KAFR",
+    "status": "active",
+    "desc": "6 nuclear tests, tunnel complex"
+  },
+  {
+    "id": "kp_ms_sohae",
+    "name": "Sohae Launch Station",
+    "lat": 39.66,
+    "lon": 124.705,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "missile_test",
+    "arm": "KPA",
+    "status": "active",
+    "desc": "ICBM/satellite launches"
+  },
+  {
+    "id": "kp_ms_tonghae",
+    "name": "Tonghae Launch Ground",
+    "lat": 40.852,
+    "lon": 129.665,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "missile_test",
+    "arm": "KPA",
+    "status": "active",
+    "desc": "Missile testing East Sea"
+  },
+  {
+    "id": "kp_af_sunan",
+    "name": "Pyongyang Sunan AB",
+    "lat": 39.198,
+    "lon": 125.673,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "air_base",
+    "arm": "KPAF",
+    "status": "active",
+    "desc": "Main KPAF base"
+  },
+  {
+    "id": "kp_af_wonsan",
+    "name": "Wonsan Air Base",
+    "lat": 39.167,
+    "lon": 127.479,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "air_base",
+    "arm": "KPAF",
+    "status": "active",
+    "desc": "East coast air ops"
+  },
+  {
+    "id": "kp_nv_sinpo",
+    "name": "Sinpo Submarine Base",
+    "lat": 40.076,
+    "lon": 128.184,
+    "country": "North Korea",
+    "cc": "KP",
+    "type": "naval_base",
+    "arm": "KPN",
+    "status": "active",
+    "desc": "SLBM submarine construction"
+  },
+  {
+    "id": "tr_af_incirlik",
+    "name": "\u0130ncirlik AB (Turkish)",
+    "lat": 37.0,
+    "lon": 35.43,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "NATO nuclear sharing, F-16"
+  },
+  {
+    "id": "tr_af_konya",
+    "name": "Konya AB",
+    "lat": 37.99,
+    "lon": 32.57,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "Anatolian Eagle exercises"
+  },
+  {
+    "id": "tr_af_akhisar",
+    "name": "Akhisar AB",
+    "lat": 38.81,
+    "lon": 27.83,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "NATO nuclear weapons storage"
+  },
+  {
+    "id": "tr_af_diyarbakir",
+    "name": "Diyarbak\u0131r AB",
+    "lat": 37.894,
+    "lon": 40.197,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "Southeast Turkey, Kurdish ops"
+  },
+  {
+    "id": "tr_af_eskisehir",
+    "name": "Eski\u015fehir AB",
+    "lat": 39.781,
+    "lon": 30.58,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "F-16, Bayraktar TB2 training"
+  },
+  {
+    "id": "tr_af_malatya",
+    "name": "Malatya-Erha\u00e7 AB",
+    "lat": 38.434,
+    "lon": 38.09,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "Eastern Turkey defense"
+  },
+  {
+    "id": "tr_af_bandirma",
+    "name": "Band\u0131rma AB",
+    "lat": 40.318,
+    "lon": 27.977,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "Marmara region, F-16"
+  },
+  {
+    "id": "tr_af_balikesir",
+    "name": "Bal\u0131kesir AB",
+    "lat": 39.619,
+    "lon": 27.926,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "air_base",
+    "arm": "TuAF",
+    "status": "active",
+    "desc": "Aegean defense, F-16"
+  },
+  {
+    "id": "tr_nv_golcuk",
+    "name": "G\u00f6lc\u00fck Naval Base",
+    "lat": 40.66,
+    "lon": 29.86,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Turkish Navy HQ, submarine base"
+  },
+  {
+    "id": "tr_nv_aksaz",
+    "name": "Aksaz Naval Base",
+    "lat": 36.969,
+    "lon": 28.373,
+    "country": "Turkey",
+    "cc": "TR",
+    "type": "naval_base",
+    "arm": "Navy",
+    "status": "active",
+    "desc": "Aegean/Med fleet"
+  },
+  {
+    "id": "jp_af_komatsu",
+    "name": "Komatsu AB (JASDF)",
+    "lat": 36.39,
+    "lon": 136.41,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "air_base",
+    "arm": "JASDF",
+    "status": "active",
+    "desc": "F-15J, Japan Sea defense"
+  },
+  {
+    "id": "jp_af_chitose",
+    "name": "Chitose AB (JASDF)",
+    "lat": 42.79,
+    "lon": 141.67,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "air_base",
+    "arm": "JASDF",
+    "status": "active",
+    "desc": "F-35A, Russia monitoring"
+  },
+  {
+    "id": "jp_af_misawa_j",
+    "name": "Misawa AB (JASDF)",
+    "lat": 40.696,
+    "lon": 141.382,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "air_base",
+    "arm": "JASDF",
+    "status": "active",
+    "desc": "JASDF/USAF joint, F-35A"
+  },
+  {
+    "id": "jp_af_hyakuri",
+    "name": "Hyakuri AB (JASDF)",
+    "lat": 36.181,
+    "lon": 140.415,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "air_base",
+    "arm": "JASDF",
+    "status": "active",
+    "desc": "F-2, Tokyo area defense"
+  },
+  {
+    "id": "jp_af_tsuiki",
+    "name": "Tsuiki AB (JASDF)",
+    "lat": 33.685,
+    "lon": 131.047,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "air_base",
+    "arm": "JASDF",
+    "status": "active",
+    "desc": "F-2, Kyushu defense"
+  },
+  {
+    "id": "jp_af_naha",
+    "name": "Naha AB (JASDF)",
+    "lat": 26.196,
+    "lon": 127.646,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "air_base",
+    "arm": "JASDF",
+    "status": "active",
+    "desc": "F-15J, Okinawa/SCS monitoring"
+  },
+  {
+    "id": "jp_nv_yokosuka_j",
+    "name": "JMSDF Yokosuka",
+    "lat": 35.28,
+    "lon": 139.67,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "naval_base",
+    "arm": "JMSDF",
+    "status": "active",
+    "desc": "Izumo-class carrier, F-35B"
+  },
+  {
+    "id": "jp_nv_kure",
+    "name": "JMSDF Kure",
+    "lat": 34.23,
+    "lon": 132.55,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "naval_base",
+    "arm": "JMSDF",
+    "status": "active",
+    "desc": "Ship repair and logistics"
+  },
+  {
+    "id": "jp_nv_sasebo",
+    "name": "JMSDF Sasebo",
+    "lat": 33.158,
+    "lon": 129.719,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "naval_base",
+    "arm": "JMSDF",
+    "status": "active",
+    "desc": "Western fleet, ECS monitoring"
+  },
+  {
+    "id": "jp_ml_yonaguni",
+    "name": "JGSDF Yonaguni",
+    "lat": 24.47,
+    "lon": 122.96,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "military_base",
+    "arm": "JGSDF",
+    "status": "active",
+    "desc": "Westernmost, facing Taiwan"
+  },
+  {
+    "id": "jp_ml_ishigaki",
+    "name": "JGSDF Ishigaki",
+    "lat": 24.39,
+    "lon": 124.18,
+    "country": "Japan",
+    "cc": "JP",
+    "type": "military_base",
+    "arm": "JGSDF",
+    "status": "active",
+    "desc": "Type-12 anti-ship missiles"
+  },
+  {
+    "id": "kr_af_suwon",
+    "name": "Suwon AB (ROKAF)",
+    "lat": 37.24,
+    "lon": 127.01,
+    "country": "South Korea",
+    "cc": "KR",
+    "type": "air_base",
+    "arm": "ROKAF",
+    "status": "active",
+    "desc": "F-15K, KF-21 incoming"
+  },
+  {
+    "id": "kr_af_daegu",
+    "name": "Daegu AB (ROKAF)",
+    "lat": 35.894,
+    "lon": 128.651,
+    "country": "South Korea",
+    "cc": "KR",
+    "type": "air_base",
+    "arm": "ROKAF",
+    "status": "active",
+    "desc": "F-16, Korean theater"
+  },
+  {
+    "id": "kr_af_cheongju",
+    "name": "Cheongju AB (ROKAF)",
+    "lat": 36.717,
+    "lon": 127.497,
+    "country": "South Korea",
+    "cc": "KR",
+    "type": "air_base",
+    "arm": "ROKAF",
+    "status": "active",
+    "desc": "KF-16, central defense"
+  },
+  {
+    "id": "kr_nv_chinhae",
+    "name": "Chinhae Naval Base",
+    "lat": 35.14,
+    "lon": 128.67,
+    "country": "South Korea",
+    "cc": "KR",
+    "type": "naval_base",
+    "arm": "ROKN",
+    "status": "active",
+    "desc": "ROK Navy primary base"
+  },
+  {
+    "id": "sa_af_sultan",
+    "name": "Prince Sultan AB",
+    "lat": 24.075,
+    "lon": 47.574,
+    "country": "Saudi Arabia",
+    "cc": "SA",
+    "type": "air_base",
+    "arm": "RSAF",
+    "status": "active",
+    "desc": "US CENTCOM forward, THAAD"
+  },
+  {
+    "id": "sa_af_taif",
+    "name": "King Fahd AB (Taif)",
+    "lat": 21.47,
+    "lon": 40.55,
+    "country": "Saudi Arabia",
+    "cc": "SA",
+    "type": "air_base",
+    "arm": "RSAF",
+    "status": "active",
+    "desc": "F-15SA, Yemen ops"
+  },
+  {
+    "id": "sa_af_khamis",
+    "name": "Khamis Mushayt AB",
+    "lat": 18.3,
+    "lon": 42.8,
+    "country": "Saudi Arabia",
+    "cc": "SA",
+    "type": "air_base",
+    "arm": "RSAF",
+    "status": "active",
+    "desc": "Closest to Yemen, strike ops"
+  },
+  {
+    "id": "sa_af_dhahran",
+    "name": "King Abdulaziz AB (Dhahran)",
+    "lat": 26.265,
+    "lon": 50.152,
+    "country": "Saudi Arabia",
+    "cc": "SA",
+    "type": "air_base",
+    "arm": "RSAF",
+    "status": "active",
+    "desc": "Gulf coast air defense"
+  },
+  {
+    "id": "ae_af_dhafra",
+    "name": "Al Dhafra AB (UAE)",
+    "lat": 24.242,
+    "lon": 54.547,
+    "country": "UAE",
+    "cc": "AE",
+    "type": "air_base",
+    "arm": "UAEAF",
+    "status": "active",
+    "desc": "Mirage 2000, F-16E/F"
+  },
+  {
+    "id": "eg_af_cairo",
+    "name": "Cairo West AB",
+    "lat": 30.115,
+    "lon": 30.916,
+    "country": "Egypt",
+    "cc": "EG",
+    "type": "air_base",
+    "arm": "EAF",
+    "status": "active",
+    "desc": "F-16, Rafale, primary EAF base"
+  },
+  {
+    "id": "au_af_darwin",
+    "name": "RAAF Darwin",
+    "lat": -12.42,
+    "lon": 130.87,
+    "country": "Australia",
+    "cc": "AU",
+    "type": "air_base",
+    "arm": "RAAF",
+    "status": "active",
+    "desc": "USMC rotational, near SCS"
+  },
+  {
+    "id": "au_nv_stirling",
+    "name": "HMAS Stirling",
+    "lat": -32.24,
+    "lon": 115.82,
+    "country": "Australia",
+    "cc": "AU",
+    "type": "naval_base",
+    "arm": "RAN",
+    "status": "active",
+    "desc": "Collins SSK, AUKUS SSN planned"
+  },
+  {
+    "id": "au_si_pinegap",
+    "name": "Pine Gap Joint Facility",
+    "lat": -23.799,
+    "lon": 133.737,
+    "country": "Australia",
+    "cc": "AU",
+    "type": "sigint",
+    "arm": "CIA/ASD",
+    "status": "active",
+    "desc": "NSA/CIA SIGINT facility"
+  },
+  {
+    "id": "tw_af_hsinchu",
+    "name": "Hsinchu AB (ROCAF)",
+    "lat": 24.818,
+    "lon": 120.939,
+    "country": "Taiwan",
+    "cc": "TW",
+    "type": "air_base",
+    "arm": "ROCAF",
+    "status": "active",
+    "desc": "F-16V fighters"
+  },
+  {
+    "id": "tw_af_chiayi",
+    "name": "Chiayi AB (ROCAF)",
+    "lat": 23.461,
+    "lon": 120.394,
+    "country": "Taiwan",
+    "cc": "TW",
+    "type": "air_base",
+    "arm": "ROCAF",
+    "status": "active",
+    "desc": "F-CK-1 fighters"
+  },
+  {
+    "id": "tw_af_tainan",
+    "name": "Tainan AB (ROCAF)",
+    "lat": 22.95,
+    "lon": 120.205,
+    "country": "Taiwan",
+    "cc": "TW",
+    "type": "air_base",
+    "arm": "ROCAF",
+    "status": "active",
+    "desc": "F-16V southern defense"
+  },
+  {
+    "id": "tw_nv_zuoying",
+    "name": "Zuoying Naval Base",
+    "lat": 22.693,
+    "lon": 120.27,
+    "country": "Taiwan",
+    "cc": "TW",
+    "type": "naval_base",
+    "arm": "ROCN",
+    "status": "active",
+    "desc": "ROCN southern HQ, submarines"
+  },
+  {
+    "id": "nato_ee",
+    "name": "NATO eFP Estonia (Tapa)",
+    "lat": 59.253,
+    "lon": 25.945,
+    "country": "Estonia",
+    "cc": "EE",
+    "type": "military_base",
+    "arm": "NATO",
+    "status": "active",
+    "desc": "NATO battle group"
+  },
+  {
+    "id": "nato_lv",
+    "name": "NATO eFP Latvia (\u0100da\u017ei)",
+    "lat": 57.073,
+    "lon": 24.321,
+    "country": "Latvia",
+    "cc": "LV",
+    "type": "military_base",
+    "arm": "NATO",
+    "status": "active",
+    "desc": "NATO battle group"
+  },
+  {
+    "id": "nato_lt",
+    "name": "NATO eFP Lithuania",
+    "lat": 54.899,
+    "lon": 23.904,
+    "country": "Lithuania",
+    "cc": "LT",
+    "type": "military_base",
+    "arm": "NATO",
+    "status": "active",
+    "desc": "NATO battle group"
+  },
+  {
+    "id": "nato_pl",
+    "name": "Redzikowo Aegis Ashore",
+    "lat": 54.257,
+    "lon": 17.489,
+    "country": "Poland",
+    "cc": "PL",
+    "type": "military_base",
+    "arm": "NATO/USA",
+    "status": "active",
+    "desc": "Aegis Ashore BMD"
+  },
+  {
+    "id": "ua_ml_dnipro",
+    "name": "Dnipro Military Command",
+    "lat": 48.465,
+    "lon": 35.046,
+    "country": "Ukraine",
+    "cc": "UA",
+    "type": "military_base",
+    "arm": "UAF",
+    "status": "active",
+    "desc": "UAF command, frequently targeted"
+  },
+  {
+    "id": "ua_ml_kharkiv",
+    "name": "Kharkiv Military District",
+    "lat": 49.994,
+    "lon": 36.23,
+    "country": "Ukraine",
+    "cc": "UA",
+    "type": "military_base",
+    "arm": "UAF",
+    "status": "active",
+    "desc": "Northern front command"
+  },
+  {
+    "id": "ua_ml_yavoriv",
+    "name": "Yavoriv NATO Training Center",
+    "lat": 49.946,
+    "lon": 23.394,
+    "country": "Ukraine",
+    "cc": "UA",
+    "type": "military_base",
+    "arm": "UAF/NATO",
+    "status": "active",
+    "desc": "NATO training, struck 2022"
+  },
+  {
+    "id": "ua_af_khmelnytskyi",
+    "name": "Khmelnytskyi AB",
+    "lat": 49.69,
+    "lon": 26.93,
+    "country": "Ukraine",
+    "cc": "UA",
+    "type": "air_base",
+    "arm": "UAF",
+    "status": "active",
+    "desc": "MiG-29, Su-27 ops"
+  },
+  {
+    "id": "ua_af_myrhorod",
+    "name": "Myrhorod AB",
+    "lat": 49.98,
+    "lon": 33.62,
+    "country": "Ukraine",
+    "cc": "UA",
+    "type": "air_base",
+    "arm": "UAF",
+    "status": "active",
+    "desc": "F-16 base (2024+)"
+  },
+  {
+    "id": "ye_ht_sanaa",
+    "name": "Sanaa Air Base (Houthi)",
+    "lat": 15.476,
+    "lon": 44.22,
+    "country": "Yemen",
+    "cc": "YE",
+    "type": "air_base",
+    "arm": "Houthis",
+    "status": "active",
+    "desc": "Houthi missile/drone ops center"
+  },
+  {
+    "id": "ye_ht_hudaydah",
+    "name": "Hudaydah Port (Houthi)",
+    "lat": 14.797,
+    "lon": 42.952,
+    "country": "Yemen",
+    "cc": "YE",
+    "type": "military_base",
+    "arm": "Houthis",
+    "status": "active",
+    "desc": "Drone launch, weapons smuggling"
+  },
+  {
+    "id": "sg_af_paya",
+    "name": "Paya Lebar AB (Singapore)",
+    "lat": 1.36,
+    "lon": 103.912,
+    "country": "Singapore",
+    "cc": "SG",
+    "type": "air_base",
+    "arm": "RSAF",
+    "status": "active",
+    "desc": "F-15SG, F-16 ops"
+  },
+  {
+    "id": "vn_nv_camranh",
+    "name": "Cam Ranh Bay",
+    "lat": 11.998,
+    "lon": 109.219,
+    "country": "Vietnam",
+    "cc": "VN",
+    "type": "naval_base",
+    "arm": "VPN",
+    "status": "active",
+    "desc": "Strategic bay, Su-30MK2"
+  },
+  {
+    "id": "ph_af_bautista",
+    "name": "Antonio Bautista AB",
+    "lat": 9.744,
+    "lon": 118.759,
+    "country": "Philippines",
+    "cc": "PH",
+    "type": "air_base",
+    "arm": "PAF",
+    "status": "active",
+    "desc": "EDCA site, SCS ops"
+  },
+  {
+    "id": "kz_ms_baikonur",
+    "name": "Baikonur Cosmodrome",
+    "lat": 45.965,
+    "lon": 63.305,
+    "country": "Kazakhstan",
+    "cc": "KZ",
+    "type": "missile_test",
+    "arm": "Russia",
+    "status": "active",
+    "desc": "Russian launch site, leased"
+  }
+]

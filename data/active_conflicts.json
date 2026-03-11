@@ -1,0 +1,143 @@
+{
+  "schema_version":"2.0",
+  "type":"active_conflicts",
+  "note":"Active armed conflicts with approximate coordinates and missile trajectory data. Updated via OSINT pipeline.",
+  "last_updated":"2025-01-01",
+  "conflicts":[
+    {
+      "id":"cf001",
+      "name":"Gaza War (Israel-Hamas)",
+      "status":"active","intensity":"critical",
+      "parties":["Israel","Hamas","PIJ"],
+      "start_date":"2023-10-07",
+      "region":[31.5,34.46],
+      "polygon":[[34.2,31.2],[34.6,31.2],[34.6,31.6],[34.2,31.6]],
+      "color":"#ff0000",
+      "casualties_est":45000,
+      "notes":"Gaza Strip. Israeli ground operation. Hamas rocket fire. Humanitarian crisis.",
+      "missile_events":[
+        {"from":[31.35,34.38],"to":[31.78,34.65],"type":"rocket","label":"Hamas Qassam/Fatah rockets","color":"#ff6600"},
+        {"from":[31.35,34.38],"to":[32.05,34.90],"type":"rocket","label":"Hamas long-range to Tel Aviv","color":"#ff4400"},
+        {"from":[31.78,34.65],"to":[31.35,34.38],"type":"airstrike","label":"IDF airstrike Gaza","color":"#cc0000"},
+        {"from":[31.78,34.65],"to":[31.30,34.28],"type":"airstrike","label":"IDF precision strike","color":"#cc0000"}
+      ]
+    },
+    {
+      "id":"cf002",
+      "name":"Lebanon-Israel Conflict",
+      "status":"reduced","intensity":"high",
+      "parties":["Israel","Hezbollah"],
+      "start_date":"2023-10-08",
+      "region":[33.5,35.5],
+      "polygon":[[34.9,33.0],[36.6,33.0],[36.6,33.9],[34.9,33.9]],
+      "color":"#ff4400",
+      "casualties_est":4000,
+      "notes":"Cross-border Hezbollah-Israel exchange. Ceasefire Jan 2025. Hezbollah degraded.",
+      "missile_events":[
+        {"from":[33.35,35.55],"to":[32.90,35.08],"type":"rocket","label":"Hezbollah Katyusha barrage","color":"#ff8800"},
+        {"from":[33.35,35.55],"to":[32.80,35.05],"type":"missile","label":"Hezbollah Fatah-110 ATGM","color":"#ff6600"},
+        {"from":[32.90,35.08],"to":[33.35,35.55],"type":"airstrike","label":"IAF Lebanon strike","color":"#cc0000"}
+      ]
+    },
+    {
+      "id":"cf003",
+      "name":"Russia-Ukraine War",
+      "status":"active","intensity":"critical",
+      "parties":["Russia","Ukraine","NATO(support)"],
+      "start_date":"2022-02-24",
+      "region":[49.0,32.0],
+      "polygon":[[22.0,44.0],[40.2,44.0],[40.2,52.4],[22.0,52.4]],
+      "color":"#ff0000",
+      "casualties_est":600000,
+      "notes":"Large-scale conventional war. Russian missile campaign on Ukrainian cities. Ukrainian counter-strikes deep into Russia.",
+      "missile_events":[
+        {"from":[59.95,30.32],"to":[50.45,30.52],"type":"missile","label":"Kalibr cruise missile → Kyiv","color":"#ff0000"},
+        {"from":[51.67,39.18],"to":[50.45,30.52],"type":"missile","label":"Iskander-M → Kyiv","color":"#ff2200"},
+        {"from":[51.67,39.18],"to":[49.84,24.02],"type":"missile","label":"Kinzhal hypersonic → Lviv","color":"#ff0044"},
+        {"from":[50.45,30.52],"to":[55.75,37.62],"type":"drone","label":"Ukrainian ATACMS → Russia","color":"#00aaff"},
+        {"from":[50.45,30.52],"to":[51.73,36.18],"type":"drone","label":"Ukrainian drones → Kursk","color":"#0088ff"},
+        {"from":[50.45,30.52],"to":[58.52,31.27],"type":"drone","label":"Ukrainian drone → Pskov","color":"#0066ff"}
+      ]
+    },
+    {
+      "id":"cf004",
+      "name":"Sudan Civil War",
+      "status":"active","intensity":"critical",
+      "parties":["SAF","RSF (Rapid Support Forces)"],
+      "start_date":"2023-04-15",
+      "region":[15.5,32.5],
+      "polygon":[[21.8,8.7],[38.6,8.7],[38.6,22.2],[21.8,22.2]],
+      "color":"#ff6600",
+      "casualties_est":150000,
+      "notes":"SAF vs RSF. Khartoum fighting. Darfur massacres. World's largest displacement crisis.",
+      "missile_events":[
+        {"from":[15.58,32.53],"to":[15.61,32.49],"type":"airstrike","label":"SAF airstrike Khartoum","color":"#ff4400"},
+        {"from":[15.58,32.53],"to":[13.45,22.45],"type":"airstrike","label":"SAF bombing Darfur","color":"#ff6600"}
+      ]
+    },
+    {
+      "id":"cf005",
+      "name":"Yemen Conflict",
+      "status":"active","intensity":"high",
+      "parties":["Houthis (IRGC-backed)","Saudi Coalition","US/UK strikes"],
+      "start_date":"2015-03-26",
+      "region":[15.5,44.2],
+      "polygon":[[41.5,11.5],[54.5,11.5],[54.5,19.0],[41.5,19.0]],
+      "color":"#ff8800",
+      "casualties_est":380000,
+      "notes":"Houthi attacks on Red Sea shipping and Israel. US/UK counter-strikes. Saudi-UAE coalition.",
+      "missile_events":[
+        {"from":[15.35,44.21],"to":[31.78,34.65],"type":"ballistic","label":"Houthi Zulfiqar → Israel","color":"#ff6600"},
+        {"from":[15.35,44.21],"to":[22.50,39.20],"type":"ballistic","label":"Houthi → Saudi Arabia","color":"#ff8800"},
+        {"from":[15.35,44.21],"to":[13.50,43.30],"type":"drone","label":"Houthi Shahed drone Red Sea","color":"#ffaa00"},
+        {"from":[23.62,58.59],"to":[15.35,44.21],"type":"airstrike","label":"US Tomahawk → Houthi sites","color":"#0044ff"},
+        {"from":[51.30,25.10],"to":[15.35,44.21],"type":"airstrike","label":"Saudi coalition strike","color":"#00aaff"}
+      ]
+    },
+    {
+      "id":"cf006",
+      "name":"Myanmar Civil War",
+      "status":"active","intensity":"high",
+      "parties":["SAC (Military Junta)","PDF","Ethnic Armed Orgs"],
+      "start_date":"2021-02-01",
+      "region":[19.7,96.1],
+      "polygon":[[92.2,9.8],[101.2,9.8],[101.2,28.5],[92.2,28.5]],
+      "color":"#ff8800",
+      "casualties_est":50000,
+      "notes":"Post-coup civil war. PDF resistance. Multiple ethnic armed groups advancing against junta.",
+      "missile_events":[
+        {"from":[16.87,96.19],"to":[20.45,96.88],"type":"airstrike","label":"Junta airstrike Mandalay area","color":"#ff4400"}
+      ]
+    },
+    {
+      "id":"cf007",
+      "name":"Ethiopia-Tigray (Low Intensity)",
+      "status":"low","intensity":"medium",
+      "parties":["Ethiopian Govt","Tigray Forces","Amhara Fano"],
+      "start_date":"2020-11-04",
+      "region":[13.5,39.5],
+      "polygon":[[36.4,3.4],[47.9,3.4],[47.9,18.0],[36.4,18.0]],
+      "color":"#ffaa00",
+      "casualties_est":600000,
+      "notes":"Ceasefire Nov 2022 but sporadic fighting continues. Amhara conflict ongoing.",
+      "missile_events":[]
+    },
+    {
+      "id":"cf008",
+      "name":"Israel-Iran Shadow War",
+      "status":"active","intensity":"high",
+      "parties":["Israel","Iran","IRGC Proxies"],
+      "start_date":"2024-04-01",
+      "region":[32.0,47.0],
+      "polygon":[],
+      "color":"#ff2200",
+      "casualties_est":100,
+      "notes":"Iran ballistic missile attacks on Israel. Israeli strikes on Iran. Proxy war through region.",
+      "missile_events":[
+        {"from":[35.68,51.39],"to":[31.78,34.65],"type":"ballistic","label":"Iran Shahab-3/Fattah → Israel","color":"#ff0000"},
+        {"from":[35.68,51.39],"to":[31.78,34.65],"type":"drone","label":"Iran Shahed-136 drone swarm","color":"#ff4400"},
+        {"from":[31.78,34.65],"to":[32.66,51.70],"type":"airstrike","label":"Israeli F-35 strike Isfahan","color":"#0044cc"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "country": "China",
+    "iso2": "CN",
+    "level": "critical",
+    "sat_count_est": 260,
+    "ground_stations": 15,
+    "desc": "YAOGAN-30 SIGINT, Jilin optical",
+    "methods": [
+      "SAR",
+      "OPTICAL",
+      "SIGINT",
+      "ASAT",
+      "CYBER"
+    ]
+  },
+  {
+    "country": "USA",
+    "iso2": "US",
+    "level": "critical",
+    "sat_count_est": 400,
+    "ground_stations": 30,
+    "desc": "NRO KH-13, Global Hawk",
+    "methods": [
+      "SAR",
+      "OPTICAL",
+      "SIGINT",
+      "HUMINT",
+      "CYBER"
+    ]
+  },
+  {
+    "country": "Russia",
+    "iso2": "RU",
+    "level": "high",
+    "sat_count_est": 140,
+    "ground_stations": 18,
+    "desc": "BARS-M optical, Lotos-S SIGINT",
+    "methods": [
+      "SAR",
+      "OPTICAL",
+      "SIGINT",
+      "ELINT"
+    ]
+  },
+  {
+    "country": "India",
+    "iso2": "IN",
+    "level": "high",
+    "sat_count_est": 55,
+    "ground_stations": 8,
+    "desc": "RISAT-2BR1 SAR, EMISAT SIGINT",
+    "methods": [
+      "SAR",
+      "OPTICAL",
+      "SIGINT"
+    ]
+  },
+  {
+    "country": "Israel",
+    "iso2": "IL",
+    "level": "critical",
+    "sat_count_est": 20,
+    "ground_stations": 4,
+    "desc": "Ofek-16 optical, TECSAR SAR",
+    "methods": [
+      "SAR",
+      "OPTICAL",
+      "SIGINT",
+      "HUMINT",
+      "CYBER"
+    ]
+  },
+  {
+    "country": "UK",
+    "iso2": "GB",
+    "level": "high",
+    "sat_count_est": 25,
+    "ground_stations": 6,
+    "desc": "Skynet-6, GCHQ SIGINT",
+    "methods": [
+      "SIGINT",
+      "OPTICAL",
+      "CYBER"
+    ]
+  },
+  {
+    "country": "France",
+    "iso2": "FR",
+    "level": "high",
+    "sat_count_est": 15,
+    "ground_stations": 5,
+    "desc": "Helios-2, CERES SIGINT",
+    "methods": [
+      "OPTICAL",
+      "SIGINT"
+    ]
+  },
+  {
+    "country": "Iran",
+    "iso2": "IR",
+    "level": "medium",
+    "sat_count_est": 5,
+    "ground_stations": 3,
+    "desc": "Noor-1/2/3 military satellites",
+    "methods": [
+      "OPTICAL",
+      "SIGINT"
+    ]
+  },
+  {
+    "country": "North Korea",
+    "iso2": "KP",
+    "level": "medium",
+    "sat_count_est": 2,
+    "ground_stations": 2,
+    "desc": "Malligyong-1 (2023)",
+    "methods": [
+      "OPTICAL"
+    ]
+  },
+  {
+    "country": "Japan",
+    "iso2": "JP",
+    "level": "medium",
+    "sat_count_est": 12,
+    "ground_stations": 5,
+    "desc": "IGS optical/radar",
+    "methods": [
+      "OPTICAL",
+      "SAR"
+    ]
+  },
+  {
+    "country": "Pakistan",
+    "iso2": "PK",
+    "level": "low",
+    "sat_count_est": 3,
+    "ground_stations": 2,
+    "desc": "PakSat, ISI HUMINT",
+    "methods": [
+      "SIGINT",
+      "HUMINT"
+    ]
+  }
+]

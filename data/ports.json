@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "type": "strategic_ports",
+  "last_updated": "2026-03-08T17:38:22Z",
+  "data": [
+    {
+      "name": "Port of Shanghai",
+      "lat": 31.233,
+      "lng": 121.47,
+      "vol": "49M TEU/yr",
+      "type": "commercial",
+      "notes": "Largest container port world."
+    },
+    {
+      "name": "Port of Singapore",
+      "lat": 1.264,
+      "lng": 103.82,
+      "vol": "37M TEU/yr",
+      "type": "commercial",
+      "notes": "Second largest. Malacca chokepoint adjacent."
+    },
+    {
+      "name": "Port of Rotterdam",
+      "lat": 51.905,
+      "lng": 4.46,
+      "vol": "15M TEU/yr",
+      "type": "commercial",
+      "notes": "Largest European port."
+    },
+    {
+      "name": "Jebel Ali UAE",
+      "lat": 25.01,
+      "lng": 55.107,
+      "vol": "14M TEU/yr",
+      "type": "commercial",
+      "notes": "Largest Middle East port. US Navy transit hub."
+    },
+    {
+      "name": "Colombo Port",
+      "lat": 6.935,
+      "lng": 79.85,
+      "vol": "7M TEU/yr",
+      "type": "strategic",
+      "notes": "China Merchants 85% stake new terminal. Indian Ocean hub. India concern."
+    },
+    {
+      "name": "Hambantota Port",
+      "lat": 6.125,
+      "lng": 81.108,
+      "vol": "99yr China lease",
+      "type": "strategic",
+      "notes": "Sri Lanka debt-for-equity. 99yr lease CHEC. Near sea lanes. Debt trap precedent."
+    },
+    {
+      "name": "Gwadar Port",
+      "lat": 25.127,
+      "lng": 62.327,
+      "vol": "CPEC terminus",
+      "type": "strategic",
+      "notes": "China Overseas Port Holdings. CPEC endpoint. 40km from Iran border."
+    },
+    {
+      "name": "Piraeus Port",
+      "lat": 37.943,
+      "lng": 23.63,
+      "vol": "6M TEU/yr",
+      "type": "strategic",
+      "notes": "COSCO 67% stake. China EU gateway. Greece NATO ally. Congressional concern."
+    },
+    {
+      "name": "Djibouti Doraleh",
+      "lat": 11.589,
+      "lng": 43.145,
+      "vol": "3M TEU/yr",
+      "type": "strategic",
+      "notes": "China-operated. Adjacent Chinese PLA base and US Camp Lemonnier."
+    },
+    {
+      "name": "Mombasa Port",
+      "lat": -4.067,
+      "lng": 39.67,
+      "vol": "Kenya hub",
+      "type": "strategic",
+      "notes": "China Exim Bank financed SGR railway inland. Debt leverage."
+    },
+    {
+      "name": "Ream Port Cambodia",
+      "lat": 10.533,
+      "lng": 103.66,
+      "vol": "under construction",
+      "type": "strategic",
+      "notes": "Adjacent new PLA naval base. Gulf of Thailand position."
+    }
+  ]
+}
