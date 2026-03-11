@@ -118,6 +118,26 @@ The 3D globe is now powered entirely by **CesiumJS**, replacing the previous dua
 
 ---
 
+## Globe Simulation Mechanism & Complexity
+
+Simulating a high-fidelity 3D globe like Google Earth is a mathematically and computationally intensive task. **Leviathan_Eye** achieves this through several nested layers of complexity:
+
+### 1. The WGS84 Ellipsoid
+Unlike many games that use a simple sphere, this dashboard uses the **WGS84 ellipsoid model**—the same standard used by GPS. Every point on the map is calculated based on the Earth’s actual equatorial bulge, mapping 2D Lat/Lon coordinates into a 3D Cartesian space (X, Y, Z) in real-time.
+
+### 2. Multi-Resolution Tiling & Level of Detail (LoD)
+To prevent the application from crashing while trying to load the entire world's imagery at once, we use a **Quadtree Tiling System**. 
+- As you zoom in, the engine dynamically calculates which specific "tiles" of the Earth are visible and fetches higher-resolution versions of only those tiles.
+- Distant tiles are simplified or rendered at extremely low resolution to save memory. 
+
+### 3. Precision Management (The "Jitter" Problem)
+Rendering objects millions of meters away from the origin in standard 32-bit floating point math leads to "jittery" movement. This project uses **Relative-to-Center (RTC) rendering** and double-precision math on the GPU to ensure that even at 100km altitude or 1km altitude, the labels and markers remain perfectly stable.
+
+### 4. Asynchronous Data Orchestration
+The complexity spikes when combining static 3D layers with **Live Overpass API** fetches and **SGP4 Satellite Propagation**. The engine must constantly recalculate the positions of thousands of moving satellites while simultaneously managing the geometric occlusions of the Earth's horizon (depth testing), all while maintaining 60 frames per second.
+
+---
+
 ## Live Internet Fetching (Demand-Driven)
 
 ### Design Philosophy
