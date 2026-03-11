@@ -435,12 +435,6 @@ All globe layers (bases, conflicts, arcs, etc.) are fully offline — they use l
 
 ## Development Notes
 
-### Hardware Used in Development
-- Asus TUF Gaming F15 FX506HF
-- 16GB RAM, RTX 2050 4GB VRAM
-- Python 3.13.x on Windows 11
-- Kali Linux reference environment
-
 ### Python Dependencies
 ```
 fastapi
